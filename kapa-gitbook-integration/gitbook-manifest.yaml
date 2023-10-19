@@ -1,0 +1,38 @@
+name: kapa-gitbook-integration
+title: kapa-gitbook-integration
+organization: ivsGEIQW5yb7omcgTIQy
+visibility: unlisted
+description: ''
+script: src/index.ts
+# The following scope(s) are available only to GitBook Staff
+# See https://developer.gitbook.com/integrations/configurations#scopes
+scopes:
+    - space:script:inject
+contentSecurityPolicy:
+    script-src: |
+        https://widget.kapa.ai
+secrets: {}
+configurations:
+    space:
+        properties:
+            website_id:
+                type: string
+                title: Website ID
+                description: Obtain this ID from the kapa.ai team for your website.
+            project_name:
+                type: string
+                title: Project name
+                description: Set the name to be displayed at the top of the docs widget.
+            project_color:
+                type: string
+                title: Project color
+                description: Choose the default color for the widget (use a HEX color code).
+            project_logo:
+                type: string
+                title: Project logo
+                description: Provide a link to the logo you want to use (a square format is recommended).
+        required:
+            - website_id
+            - project_name
+            - project_color
+            - project_logo
