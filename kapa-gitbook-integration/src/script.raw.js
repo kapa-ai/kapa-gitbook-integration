@@ -13,10 +13,10 @@
         s.type = 'text/javascript';
         s.async = true;
         s.src = "https://widget.kapa.ai/kapa-widget.bundle.js"
-        s["data-website-id"] = WEBSITE_ID;
-        s["data-project-name"] = PROJECT_NAME;
-        s["data-project-color"] = PROJECT_COLOR;
-        s["data-project-logo"] = PROJECT_LOGO;
+        s.setAttribute("data-website-id", WEBSITE_ID);
+        s.setAttribute("data-project-name", PROJECT_NAME);
+        s.setAttribute("data-project-color", PROJECT_COLOR);
+        s.setAttribute("data-project-logo", PROJECT_LOGO);
 
         var x = d.getElementsByTagName('script')[0];
         x.parentNode.insertBefore(s, x);
