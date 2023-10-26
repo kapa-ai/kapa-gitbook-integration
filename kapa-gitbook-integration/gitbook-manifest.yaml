@@ -1,7 +1,7 @@
 name: kapa-gitbook-integration
 title: Kapa.ai
 organization: ivsGEIQW5yb7omcgTIQy
-visibility: unlisted
+visibility: public
 icon: ./assets/logo.png
 previewImages:
     - ./assets/preview.png
