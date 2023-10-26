@@ -1,8 +1,30 @@
 name: kapa-gitbook-integration
-title: kapa-gitbook-integration
+title: Kapa.ai
 organization: ivsGEIQW5yb7omcgTIQy
 visibility: unlisted
-description: ''
+icon: ./assets/logo.png
+previewImages:
+    - ./assets/preview.png
+description: Add kapa.ai to your documentation on GitBook
+externalLinks:
+    - label: Website
+      url: https://www.kapa.ai
+categories:
+    - analytics
+summary: |
+    # Overview
+
+    The kapa.ai integration for GitBook allows you to add the kapa.ai widget to your documentation.
+    
+    # How it works
+    
+    kapa.ai learns from your docs, API references, tutorials, forums, chat histories, and GitHub content to generate an LLM-powered chatbot that answers developer questions automatically.
+    
+    This improves the discoverability of your content and improves developer experience.
+    
+    # Configure
+    
+    You can configure the integration on single or multiple public spaces. To configure and enable your kapa.ai instance you can follow this [guide](https://docs.kapa.ai/installation-widget#g-gitbook-).
 script: src/index.ts
 # The following scope(s) are available only to GitBook Staff
 # See https://developer.gitbook.com/integrations/configurations#scopes
@@ -31,6 +53,54 @@ configurations:
                 type: string
                 title: Project logo
                 description: Provide a link to the logo you want to use (a square format is recommended).
+            button_position_top:
+                type: string
+                title: Button position (top)
+                description: Choose the position of the button on the page (top). Default is not set.
+            button_position_bottom:
+                type: string
+                title: Button position (bottom)
+                description: Choose the position of the button on the page (bottom). Default is 20px.
+            button_position_left:
+                type: string
+                title: Button position (left)
+                description: Choose the position of the button on the page (left). Default is not set.
+            button_position_right:
+                type: string
+                title: Button position (right)
+                description: Choose the position of the button on the page (right). Default is 20px.
+            button_hide:
+                type: string
+                title: Hide button
+                description: Hide the button on the page. Default is not set.
+            modal_override_open_class:
+                type: string
+                title: Override open class
+                description: Set to a class name (e.g., "my-class") to override the modal open behavior. Default is not set.
+            modal_open_by_default:
+                type: string
+                title: Open by default
+                description: Set to "true" to open the modal by default when loading it on a page. Default is not set.
+            modal_search_placeholder:
+                type: string
+                title: Search placeholder
+                description: Set the placeholder text for the search input.
+            modal_title:
+                type: string
+                title: Title
+                description: Set the title for the modal. Default is "[project name] Docs AI".
+            modal_disclaimer:
+                type: string
+                title: Disclaimer
+                description: Set a disclaimer to appear at the top of the modal. Default is not set.
+            modal_hide_image:
+                type: string
+                title: Hide image
+                description: Set to "true" to hide the image in the modal. Default is not set.
+            button_text:
+                type: string
+                title: Button text
+                description: Set the text for the button. Default is "Ask AI".
         required:
             - website_id
             - project_name
