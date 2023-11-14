@@ -93,6 +93,8 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
     modal_title: environment.spaceInstallation.configuration.modal_title,
     modal_disclaimer:
       environment.spaceInstallation.configuration.modal_disclaimer,
+    modal_example_questions:
+      environment.spaceInstallation.configuration.modal_example_questions,
     modal_hide_image:
       environment.spaceInstallation.configuration.modal_hide_image,
     button_text: environment.spaceInstallation.configuration.button_text,
@@ -151,6 +153,7 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
       environment.spaceInstallation.configuration.modal_title_font_size,
     modal_title_color:
       environment.spaceInstallation.configuration.modal_title_color,
+    font_family: environment.spaceInstallation.configuration.font_family,
   };
 
   if (!website_id || !project_name || !project_color || !project_logo) {
