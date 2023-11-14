@@ -4,105 +4,237 @@ organization: ivsGEIQW5yb7omcgTIQy
 visibility: public
 icon: ./assets/logo.png
 previewImages:
-    - ./assets/preview.png
+  - ./assets/preview.png
 description: Add kapa.ai to your documentation on GitBook
 externalLinks:
-    - label: Website
-      url: https://www.kapa.ai
+  - label: Website
+    url: https://www.kapa.ai
 categories:
-    - analytics
+  - analytics
 summary: |
-    # Overview
+  # Overview
 
-    The kapa.ai integration for GitBook allows you to add the kapa.ai widget to your documentation.
-    
-    # How it works
-    
-    kapa.ai learns from your docs, API references, tutorials, forums, chat histories, and GitHub content to generate an LLM-powered chatbot that answers developer questions automatically.
-    
-    This improves the discoverability of your content and improves developer experience.
-    
-    # Configure
-    
-    You can configure the integration on single or multiple public spaces. To configure and enable your kapa.ai instance you can follow this [guide](https://docs.kapa.ai/installation-widget#g-gitbook-).
+  The kapa.ai integration for GitBook allows you to add the kapa.ai widget to your documentation.
+
+  # How it works
+
+  kapa.ai learns from your docs, API references, tutorials, forums, chat histories, and GitHub content to generate an LLM-powered chatbot that answers developer questions automatically.
+
+  This improves the discoverability of your content and improves developer experience.
+
+  # Configure
+
+  You can configure the integration on single or multiple public spaces. To configure and enable your kapa.ai instance you can follow this [guide](https://docs.kapa.ai/installation-widget#g-gitbook-).
 script: src/index.ts
 # The following scope(s) are available only to GitBook Staff
 # See https://developer.gitbook.com/integrations/configurations#scopes
 scopes:
-    - space:script:inject
+  - space:script:inject
 contentSecurityPolicy:
-    script-src: |
-        https://widget.kapa.ai
+  script-src: |
+    https://widget.kapa.ai
 secrets: {}
 configurations:
-    space:
-        properties:
-            website_id:
-                type: string
-                title: Website ID
-                description: Obtain this ID from the kapa.ai team for your website.
-            project_name:
-                type: string
-                title: Project name
-                description: Set the name to be displayed at the top of the docs widget.
-            project_color:
-                type: string
-                title: Project color
-                description: Choose the default color for the widget (use a HEX color code).
-            project_logo:
-                type: string
-                title: Project logo
-                description: Provide a link to the logo you want to use (a square format is recommended).
-            button_position_top:
-                type: string
-                title: Button position (top)
-                description: Choose the position of the button on the page (top). Default is not set.
-            button_position_bottom:
-                type: string
-                title: Button position (bottom)
-                description: Choose the position of the button on the page (bottom). Default is 20px.
-            button_position_left:
-                type: string
-                title: Button position (left)
-                description: Choose the position of the button on the page (left). Default is not set.
-            button_position_right:
-                type: string
-                title: Button position (right)
-                description: Choose the position of the button on the page (right). Default is 20px.
-            button_hide:
-                type: string
-                title: Hide button
-                description: Hide the button on the page. Default is not set.
-            modal_override_open_class:
-                type: string
-                title: Override open class
-                description: Set to a class name (e.g., "my-class") to override the modal open behavior. Default is not set.
-            modal_open_by_default:
-                type: string
-                title: Open by default
-                description: Set to "true" to open the modal by default when loading it on a page. Default is not set.
-            modal_search_placeholder:
-                type: string
-                title: Search placeholder
-                description: Set the placeholder text for the search input.
-            modal_title:
-                type: string
-                title: Title
-                description: Set the title for the modal. Default is "[project name] Docs AI".
-            modal_disclaimer:
-                type: string
-                title: Disclaimer
-                description: Set a disclaimer to appear at the top of the modal. Default is not set.
-            modal_hide_image:
-                type: string
-                title: Hide image
-                description: Set to "true" to hide the image in the modal. Default is not set.
-            button_text:
-                type: string
-                title: Button text
-                description: Set the text for the button. Default is "Ask AI".
-        required:
-            - website_id
-            - project_name
-            - project_color
-            - project_logo
+  space:
+    properties:
+      website_id:
+        type: string
+        title: Website ID
+        description: Obtain this ID from the kapa.ai team for your website.
+      project_name:
+        type: string
+        title: Project name
+        description: Set the name to be displayed at the top of the docs widget.
+      project_color:
+        type: string
+        title: Project color
+        description: Choose the default color for the widget (use a HEX color code).
+      project_logo:
+        type: string
+        title: Project logo
+        description: Provide a link to the logo you want to use (a square format is recommended).
+      button_position_top:
+        type: string
+        title: Button position (top)
+        description: Choose the position of the button on the page (top). Default is not set.
+      button_position_bottom:
+        type: string
+        title: Button position (bottom)
+        description: Choose the position of the button on the page (bottom). Default is 20px.
+      button_position_left:
+        type: string
+        title: Button position (left)
+        description: Choose the position of the button on the page (left). Default is not set.
+      button_position_right:
+        type: string
+        title: Button position (right)
+        description: Choose the position of the button on the page (right). Default is 20px.
+      button_height:
+        type: string
+        title: Button height
+        description: Choose the height of the button. Default is "5rem".
+      button_width:
+        type: string
+        title: Button width
+        description: Choose the width of the button. Default is "4.5rem".
+      button_padding:
+        type: string
+        title: Button padding
+        description: Choose the padding of the button. Default is "0".
+      button_bg_color:
+        type: string
+        title: Button background color
+        description: Choose the background color of the button. Default is not set.
+      button_border_radius:
+        type: string
+        title: Button border radius
+        description: Choose the border radius of the button. Default is not set.
+      button_border:
+        type: string
+        title: Button border
+        description: Choose the border of the button. Default is not set.
+      button_box_shadow:
+        type: string
+        title: Button box shadow
+        description: Choose the box shadow of the button. Default is "0 0 10px rgba(0, 0, 0, 0.2)".
+      button_text_font_size:
+        type: string
+        title: Button text font size
+        description: Choose the font size of the text in the button. Default is not set.
+      button_text_font_family:
+        type: string
+        title: Button text font family
+        description: Choose the font family of the text in the button. Default is not set.
+      button_text_color:
+        type: string
+        title: Button text color
+        description: Choose the color of the text in the button. Default is not set.
+      button_text_shadow:
+        type: string
+        title: Button text shadow
+        description: Choose the shadow of the text in the button. Default is "1px 1px 2px rgba(0, 0, 0, 0.2)".
+      button_hide:
+        type: string
+        title: Hide button
+        description: Hide the button on the page. Default is not set.
+      modal_size:
+        type: string
+        title: Modal size
+        description: Choose the horizontal size of the modal. Default is "640px".
+      modal_x_offset:
+        type: string
+        title: Modal X offset
+        description: Choose the offset of the modal on the X axist. Default is not set.
+      modal_y_offset:
+        type: string
+        title: Modal Y offset
+        description: Choose the offset of the modal on the Y axist. Default is "10vh".
+      modal_border_radius:
+        type: string
+        title: Modal border radius
+        description: Choose the border radius of the modal. Default is "0.5rem".
+      modal_header_min_height:
+        type: string
+        title: Modal header min height
+        description: Choose the min height of the modal header. Default is set to "48px".
+      modal_header_padding:
+        type: string
+        title: Modal header padding
+        description: Choose the padding of the modal header. Default is set to "20px".
+      modal_header_padding_top:
+        type: string
+        title: Modal header top padding
+        description: Choose the top-side padding of the modal header. Default is not set.
+      modal_header_padding_right:
+        type: string
+        title: Modal header right padding
+        description: Choose the right-side padding of the modal header. Default is not set.
+      modal_header_padding_bottom:
+        type: string
+        title: Modal header bottom padding
+        description: Choose the bottom-side padding of the modal header. Default is not set.
+      modal_header_padding_left:
+        type: string
+        title: Modal header padding left
+        description: Choose the left-side padding of the modal header. Default is not set.
+      modal_header_bg_color:
+        type: string
+        title: Modal header background color
+        description: Choose the background color of the modal header. Default is "#F1F3F5".
+      modal_header_border_bottom:
+        type: string
+        title: Modal header border bottom
+        description: Choose the bottom border of the modal header. Default is "1px solid #CED4DA".
+      modal_body_bg_color:
+        type: string
+        title: Modal body background color
+        description: Choose the background color of the modal header. Default is not set.
+      modal_body_padding_top:
+        type: string
+        title: Modal body top padding
+        description: Choose the top-side padding of the modal body. Default is not set.
+      modal_body_padding_right:
+        type: string
+        title: Modal body right padding
+        description: Choose the right-side padding of the modal body. Default is not set.
+      modal_body_padding_bottom:
+        type: string
+        title: Modal body bottom padding
+        description: Choose the bottom-side padding of the modal body. Default is not set.
+      modal_body_padding_left:
+        type: string
+        title: Modal body padding left
+        description: Choose the left-side padding of the modal body. Default is not set.
+      modal_title_font_family:
+        type: string
+        title: Modal title font family
+        description: Choose the font family of the modal title.
+      modal_title_font_size:
+        type: string
+        title: Modal title font size
+        description: Choose the font size of the modal title.
+      modal_title_color:
+        type: string
+        title: Modal title color
+        description: Choose the color of the modal title.
+      modal_override_open_class:
+        type: string
+        title: Override open class
+        description: Set to a class name to override the modal open behavior. Default is not set.
+      modal_open_on_command_k:
+        type: string
+        title: Open modal on CMD+K
+        description: Set to `"true"` to enable opening the modal with `Cmd+K`. Default is set to `"false"`.
+      modal_open_by_default:
+        type: string
+        title: Open by default
+        description: Set to "true" to open the modal by default when loading it on a page. Default is not set.
+      modal_search_placeholder:
+        type: string
+        title: Search placeholder
+        description: Set the placeholder text for the search input.
+      modal_title:
+        type: string
+        title: Title
+        description: Set the title for the modal. Default is "[project name] Docs AI".
+      modal_disclaimer:
+        type: string
+        title: Disclaimer
+        description: Set a disclaimer to appear at the top of the modal. Default is not set.
+      modal_example_questions:
+        type: string
+        title: Example questions
+        description: Comma separated list of example questions to show in the modal. Default is not set.
+      modal_hide_image:
+        type: string
+        title: Hide image
+        description: Set to "true" to hide the image in the modal. Default is not set.
+      button_text:
+        type: string
+        title: Button text
+        description: Set the text for the button. Default is "Ask AI".
+    required:
+      - website_id
+      - project_name
+      - project_color
+      - project_logo
