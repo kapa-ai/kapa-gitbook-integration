@@ -101,6 +101,10 @@ configurations:
         type: string
         title: Button text font size
         description: Choose the font size of the text in the button. Default is not set.
+      button_text_font_weight:
+        type: string
+        title: Button text font weight
+        description: Choose the font weight of the text in the button. Default is not set.
       button_text_font_family:
         type: string
         title: Button text font family
@@ -193,6 +197,10 @@ configurations:
         type: string
         title: Modal title font size
         description: Choose the font size of the modal title.
+      modal_title_font_weight:
+        type: string
+        title: Modal title font weight
+        description: Choose the font weight of the modal title.
       modal_title_color:
         type: string
         title: Modal title color
@@ -233,6 +241,30 @@ configurations:
         type: string
         title: Button text
         description: Set the text for the button. Default is "Ask AI".
+      switch_color:
+        type: string
+        title: Switch color
+        description: The active color of the switch. Default is not set.
+      switch_border:
+        type: string
+        title: Switch border
+        description: The border of the switch. Default is not set.
+      switch_border_radius:
+        type: string
+        title: Switch border radius
+        description: The border radius of the switch. Default is not set.
+      switch_bg_color:
+        type: string
+        title: Switch background color
+        description: The background color of the switch. Default is not set.
+      switch_show_icons:
+        type: string
+        title: Switch show icons
+        description: Enable the icons on the switch. Default is set to `"false"`.
+      font_family:
+        type: string
+        title: Global font family
+        description: Default `"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif"`.
     required:
       - website_id
       - project_name
