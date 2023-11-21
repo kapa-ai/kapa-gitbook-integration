@@ -104,7 +104,6 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
       environment.spaceInstallation.configuration.modal_example_questions,
     modal_hide_image:
       environment.spaceInstallation.configuration.modal_hide_image,
-    button_text: environment.spaceInstallation.configuration.button_text,
     button_height: environment.spaceInstallation.configuration.button_height,
     button_width: environment.spaceInstallation.configuration.button_width,
     button_padding: environment.spaceInstallation.configuration.button_padding,
@@ -174,6 +173,7 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
       environment.spaceInstallation.configuration.switch_bg_color,
     switch_show_icons:
       environment.spaceInstallation.configuration.switch_show_icons,
+    button_text: environment.spaceInstallation.configuration.button_text,
     font_family: environment.spaceInstallation.configuration.font_family,
   };
 
