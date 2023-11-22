@@ -27,6 +27,7 @@ type KapaRuntimeContext = RuntimeContext<
       button_border?: string;
       button_box_shadow?: string;
       button_text_font_size?: string;
+      button_text_font_weight?: string;
       button_text_font_family?: string;
       button_text_color?: string;
       button_text_shadow?: string;
@@ -49,6 +50,7 @@ type KapaRuntimeContext = RuntimeContext<
       modal_body_padding_bottom?: string;
       modal_body_padding_left?: string;
       modal_title_font_family?: string;
+      modal_title_font_weight?: string;
       modal_title_font_size?: string;
       modal_title_color?: string;
       modal_override_open_class?: string;
@@ -58,6 +60,11 @@ type KapaRuntimeContext = RuntimeContext<
       modal_disclaimer?: string;
       modal_example_questions?: string;
       modal_hide_image?: string;
+      switch_color?: string;
+      switch_border?: string;
+      switch_border_radius?: string;
+      switch_bg_color?: string;
+      switch_show_icons?: string;
       button_text?: string;
       font_family?: string;
     }
@@ -97,7 +104,6 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
       environment.spaceInstallation.configuration.modal_example_questions,
     modal_hide_image:
       environment.spaceInstallation.configuration.modal_hide_image,
-    button_text: environment.spaceInstallation.configuration.button_text,
     button_height: environment.spaceInstallation.configuration.button_height,
     button_width: environment.spaceInstallation.configuration.button_width,
     button_padding: environment.spaceInstallation.configuration.button_padding,
@@ -110,6 +116,8 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
       environment.spaceInstallation.configuration.button_box_shadow,
     button_text_font_size:
       environment.spaceInstallation.configuration.button_text_font_size,
+    button_text_font_weight:
+      environment.spaceInstallation.configuration.button_text_font_weight,
     button_text_font_family:
       environment.spaceInstallation.configuration.button_text_font_family,
     button_text_color:
@@ -149,10 +157,23 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
       environment.spaceInstallation.configuration.modal_body_padding_left,
     modal_title_font_family:
       environment.spaceInstallation.configuration.modal_title_font_family,
+    modal_title_font_weight:
+      environment.spaceInstallation.configuration.modal_title_font_family,
     modal_title_font_size:
       environment.spaceInstallation.configuration.modal_title_font_size,
     modal_title_color:
       environment.spaceInstallation.configuration.modal_title_color,
+    switch_color:
+      environment.spaceInstallation.configuration.switch_color,
+    switch_border:
+      environment.spaceInstallation.configuration.switch_border,
+    switch_border_radius:
+      environment.spaceInstallation.configuration.switch_border_radius,
+    switch_bg_color:
+      environment.spaceInstallation.configuration.switch_bg_color,
+    switch_show_icons:
+      environment.spaceInstallation.configuration.switch_show_icons,
+    button_text: environment.spaceInstallation.configuration.button_text,
     font_family: environment.spaceInstallation.configuration.font_family,
   };
 
