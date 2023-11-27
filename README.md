@@ -17,7 +17,11 @@ Normally, you would then install the libraries and start the Gitbook dev server 
 
 Instead, we need to do the following to develop our integration:
 - Install the integration in a Gitbook space (on [app.gitbook.com](https://app.gitbook.com/)).
+- cd into the `kapa-gitbook-integration` directory (where the `gitbook-manifest.yaml` is located)
+- Run `npm install`
 - Run `gitbook publish` **every time** we make a change to our integration's code (JS code, manifest contents, etc.).
 - Make any arbitrary changes to the content of our Gitbook space, e.g. by editing some text and merging the change request. This will trigger a new build of the Gitbook space, which will include our updated integration. Sometimes it will work without any changes to the content just by refreshing the published page, but it's unclear what the exact conditions are.
+
+**NOTE**: To obtain access rights for releasing the integration, send an email to [addison@gitbook.io](mailto:addison@gitbook.io) and request access.
 
 **Caution**: This means that there is really no dev environment for the integration. You will need to be careful not to break the integration for other users by publishing broken code.
