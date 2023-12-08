@@ -225,6 +225,14 @@ configurations:
         type: string
         title: Modal disclaimer
         description: Set a disclaimer to appear at the top of the modal. Default is not set.
+      modal_ask_ai_input_placeholder:
+        type: string
+        title: Modal Ask AI input placeholder 
+        description: Default is `"Ask me a question about [project name]..."`.
+      modal_search_input_placeholder:
+        type: string
+        title: Modal Search mode input placeholder 
+        description: Default is `"Search sources..."`.
       modal_example_questions:
         type: string
         title: Modal example questions

@@ -57,6 +57,8 @@ type KapaRuntimeContext = RuntimeContext<
       modal_open_by_default?: string;
       modal_title?: string;
       modal_disclaimer?: string;
+      modal_ask_ai_input_placeholder?: string;
+      modal_search_input_placeholder?: string;
       modal_example_questions?: string;
       modal_image_hide?: string;
       modal_image_height?: string;
@@ -112,6 +114,12 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
     modal_title: environment.spaceInstallation.configuration.modal_title,
     modal_disclaimer:
       environment.spaceInstallation.configuration.modal_disclaimer,
+    modal_ask_ai_input_placeholder:
+      environment.spaceInstallation.configuration
+        .modal_ask_ai_input_placeholder,
+    modal_search_input_placeholder:
+      environment.spaceInstallation.configuration
+        .modal_search_input_placeholder,
     modal_example_questions:
       environment.spaceInstallation.configuration.modal_example_questions,
     modal_image_hide:
