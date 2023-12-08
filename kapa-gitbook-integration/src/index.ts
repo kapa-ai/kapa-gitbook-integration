@@ -55,11 +55,14 @@ type KapaRuntimeContext = RuntimeContext<
       modal_title_color?: string;
       modal_override_open_class?: string;
       modal_open_by_default?: string;
-      modal_search_placeholder?: string;
       modal_title?: string;
       modal_disclaimer?: string;
+      modal_ask_ai_input_placeholder?: string;
+      modal_search_input_placeholder?: string;
       modal_example_questions?: string;
-      modal_hide_image?: string;
+      modal_image_hide?: string;
+      modal_image_height?: string;
+      modal_image_width?: string;
       switch_color?: string;
       switch_border?: string;
       switch_border_radius?: string;
@@ -67,6 +70,19 @@ type KapaRuntimeContext = RuntimeContext<
       switch_show_icons?: string;
       button_text?: string;
       font_family?: string;
+      serch_mode_enabled?: string;
+      serch_mode_default?: string;
+      serch_display_num_results?: string;
+      serch_include_source_names?: string;
+      serch_source_group_order?: string;
+      serch_keyboard_nav_enabled?: string;
+      serch_result_hover_bg_color?: string;
+      serch_result_primary_text_color?: string;
+      serch_result_secondary_text_color?: string;
+      serch_result_badge_bg_color?: string;
+      serch_result_badge_text_color?: string;
+      serch_show_more_button_text_color?: string;
+      serch_show_more_button_hover_bg_color?: string;
     }
   >
 >;
@@ -95,15 +111,23 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
       environment.spaceInstallation.configuration.modal_override_open_class,
     modal_open_by_default:
       environment.spaceInstallation.configuration.modal_open_by_default,
-    modal_search_placeholder:
-      environment.spaceInstallation.configuration.modal_search_placeholder,
     modal_title: environment.spaceInstallation.configuration.modal_title,
     modal_disclaimer:
       environment.spaceInstallation.configuration.modal_disclaimer,
+    modal_ask_ai_input_placeholder:
+      environment.spaceInstallation.configuration
+        .modal_ask_ai_input_placeholder,
+    modal_search_input_placeholder:
+      environment.spaceInstallation.configuration
+        .modal_search_input_placeholder,
     modal_example_questions:
       environment.spaceInstallation.configuration.modal_example_questions,
-    modal_hide_image:
-      environment.spaceInstallation.configuration.modal_hide_image,
+    modal_image_hide:
+      environment.spaceInstallation.configuration.modal_image_hide,
+    modal_image_height:
+      environment.spaceInstallation.configuration.modal_image_height,
+    modal_image_width:
+      environment.spaceInstallation.configuration.modal_image_width,
     button_height: environment.spaceInstallation.configuration.button_height,
     button_width: environment.spaceInstallation.configuration.button_width,
     button_padding: environment.spaceInstallation.configuration.button_padding,
@@ -163,10 +187,8 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
       environment.spaceInstallation.configuration.modal_title_font_size,
     modal_title_color:
       environment.spaceInstallation.configuration.modal_title_color,
-    switch_color:
-      environment.spaceInstallation.configuration.switch_color,
-    switch_border:
-      environment.spaceInstallation.configuration.switch_border,
+    switch_color: environment.spaceInstallation.configuration.switch_color,
+    switch_border: environment.spaceInstallation.configuration.switch_border,
     switch_border_radius:
       environment.spaceInstallation.configuration.switch_border_radius,
     switch_bg_color:
@@ -175,6 +197,36 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
       environment.spaceInstallation.configuration.switch_show_icons,
     button_text: environment.spaceInstallation.configuration.button_text,
     font_family: environment.spaceInstallation.configuration.font_family,
+    serch_mode_enabled:
+      environment.spaceInstallation.configuration.serch_mode_enabled,
+    serch_mode_default:
+      environment.spaceInstallation.configuration.serch_mode_default,
+    serch_display_num_results:
+      environment.spaceInstallation.configuration.serch_display_num_results,
+    serch_include_source_names:
+      environment.spaceInstallation.configuration.serch_include_source_names,
+    serch_source_group_order:
+      environment.spaceInstallation.configuration.serch_source_group_order,
+    serch_keyboard_nav_enabled:
+      environment.spaceInstallation.configuration.serch_keyboard_nav_enabled,
+    serch_result_hover_bg_color:
+      environment.spaceInstallation.configuration.serch_result_hover_bg_color,
+    serch_result_primary_text_color:
+      environment.spaceInstallation.configuration
+        .serch_result_primary_text_color,
+    serch_result_secondary_text_color:
+      environment.spaceInstallation.configuration
+        .serch_result_secondary_text_color,
+    serch_result_badge_bg_color:
+      environment.spaceInstallation.configuration.serch_result_badge_bg_color,
+    serch_result_badge_text_color:
+      environment.spaceInstallation.configuration.serch_result_badge_text_color,
+    serch_show_more_button_text_color:
+      environment.spaceInstallation.configuration
+        .serch_show_more_button_text_color,
+    serch_show_more_button_hover_bg_color:
+      environment.spaceInstallation.configuration
+        .serch_show_more_button_hover_bg_color,
   };
 
   if (!website_id || !project_name || !project_color || !project_logo) {

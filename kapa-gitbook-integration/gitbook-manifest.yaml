@@ -207,7 +207,7 @@ configurations:
         description: Choose the color of the modal title.
       modal_override_open_class:
         type: string
-        title: Override open class
+        title: Modal override open class
         description: Set to a class name to override the modal open behavior. Default is not set.
       modal_open_on_command_k:
         type: string
@@ -215,28 +215,40 @@ configurations:
         description: Set to `"true"` to enable opening the modal with `Cmd+K`. Default is set to `"false"`.
       modal_open_by_default:
         type: string
-        title: Open by default
+        title: Modal open by default
         description: Set to "true" to open the modal by default when loading it on a page. Default is not set.
-      modal_search_placeholder:
-        type: string
-        title: Search placeholder
-        description: Set the placeholder text for the search input.
       modal_title:
         type: string
-        title: Title
+        title: Modal title
         description: Set the title for the modal. Default is "[project name] Docs AI".
       modal_disclaimer:
         type: string
-        title: Disclaimer
+        title: Modal disclaimer
         description: Set a disclaimer to appear at the top of the modal. Default is not set.
+      modal_ask_ai_input_placeholder:
+        type: string
+        title: Modal Ask AI input placeholder 
+        description: Default is `"Ask me a question about [project name]..."`.
+      modal_search_input_placeholder:
+        type: string
+        title: Modal Search mode input placeholder 
+        description: Default is `"Search sources..."`.
       modal_example_questions:
         type: string
-        title: Example questions
+        title: Modal example questions
         description: Comma separated list of example questions to show in the modal. Default is not set.
-      modal_hide_image:
+      modal_image_hide:
         type: string
-        title: Hide image
+        title: Modal image hide
         description: Set to "true" to hide the image in the modal. Default is not set.
+      modal_image_height:
+        type: string
+        title: Modal image height
+        description: Default is set to `"32"`.
+      modal_image_width:
+        type: string
+        title: Modal image width
+        description: Default is set to `"32"`.
       button_text:
         type: string
         title: Button text
@@ -265,6 +277,58 @@ configurations:
         type: string
         title: Global font family
         description: Default `"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif"`.
+      serch_mode_enabled:
+        type: string
+        title: Serach mode enabled
+        description: Set to `"true"` to enable the search mode. Default is `"false"`.
+      serch_mode_default:
+        type: string
+        title: Serach mode default
+        description: Set to `"true"` to set search as the default mode. Default is `"false"`.
+      serch_display_num_results:
+        type: string
+        title: Search display num results
+        description: The amount of results displayed in each "page". Default is `"5"`.
+      serch_include_source_names:
+        type: string
+        title: Search include source names
+        description: Set of source names that should be included in the search. Default is not set.
+      serch_source_group_order:
+        type: string
+        title: Search source group order
+        description: Order of source names by wich sources should be grouped. Default is note set.
+      serch_keyboard_nav_enabled:
+        type: string
+        title: Search keyboard nav enabled
+        description: Set to `"false"` to disable keyboard navigation. Default is `"true"`.
+      serch_result_hover_bg_color:
+        type: string
+        title: Search result hover bg color
+        description: Default is `"#F1F1F1"`
+      serch_result_primary_text_color:
+        type: string
+        title: Search result primary text color
+        description: Default is the project color.
+      serch_result_secondary_text_color:
+        type: string
+        title: Search result secondary text color
+        description: Default is `"#868e96"`.
+      serch_result_badge_bg_color:
+        type: string
+        title: Search result badge bg color
+        description: Default is not set.
+      serch_result_badge_text_color:
+        type: string
+        title: Search result badge text color
+        description: Default is not set.
+      serch_show_more_button_text_color:
+        type: string
+        title: Search show more button text color
+        description: Default is the project color.
+      serch_show_more_button_hover_bg_color:
+        type: string
+        title: Search show more hover bg color
+        description: Default is not set.
     required:
       - website_id
       - project_name
