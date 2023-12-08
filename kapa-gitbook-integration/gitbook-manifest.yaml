@@ -227,11 +227,11 @@ configurations:
         description: Set a disclaimer to appear at the top of the modal. Default is not set.
       modal_ask_ai_input_placeholder:
         type: string
-        title: Modal Ask AI input placeholder 
+        title: Ask AI mode input placeholder
         description: Default is `"Ask me a question about [project name]..."`.
       modal_search_input_placeholder:
         type: string
-        title: Modal Search mode input placeholder 
+        title: Search mode input placeholder
         description: Default is `"Search sources..."`.
       modal_example_questions:
         type: string
@@ -307,11 +307,11 @@ configurations:
         description: Default is `"#F1F1F1"`
       serch_result_primary_text_color:
         type: string
-        title: Search result primary text color
+        title: Search result text color
         description: Default is the project color.
       serch_result_secondary_text_color:
         type: string
-        title: Search result secondary text color
+        title: Search result sec. text color
         description: Default is `"#868e96"`.
       serch_result_badge_bg_color:
         type: string
@@ -323,11 +323,11 @@ configurations:
         description: Default is not set.
       serch_show_more_button_text_color:
         type: string
-        title: Search show more button text color
+        title: Show more text color
         description: Default is the project color.
       serch_show_more_button_hover_bg_color:
         type: string
-        title: Search show more hover bg color
+        title: Show more hover bg color
         description: Default is not set.
     required:
       - website_id
