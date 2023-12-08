@@ -307,11 +307,11 @@ configurations:
         description: Default is `"#F1F1F1"`
       serch_result_primary_text_color:
         type: string
-        title: Search result primary text color
+        title: Search result text color
         description: Default is the project color.
       serch_result_secondary_text_color:
         type: string
-        title: Search result secondary text color
+        title: Search result sec. text color
         description: Default is `"#868e96"`.
       serch_result_badge_bg_color:
         type: string
@@ -323,11 +323,11 @@ configurations:
         description: Default is not set.
       serch_show_more_button_text_color:
         type: string
-        title: Search show more button text color
+        title: Show more text color
         description: Default is the project color.
       serch_show_more_button_hover_bg_color:
         type: string
-        title: Search show more hover bg color
+        title: Show more hover bg color
         description: Default is not set.
     required:
       - website_id
