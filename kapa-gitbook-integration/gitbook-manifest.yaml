@@ -169,6 +169,10 @@ configurations:
         type: string
         title: Modal header border bottom
         description: Choose the bottom border of the modal header. Default is "1px solid #CED4DA".
+      modal_header_logo_hide_on_mobile:
+        type: string
+        title: Modal logo hide on mobile
+        description: Hide the modal logo on mobile. Default is `"false"`.
       modal_body_bg_color:
         type: string
         title: Modal body background color
@@ -217,6 +221,10 @@ configurations:
         type: string
         title: Modal open by default
         description: Set to "true" to open the modal by default when loading it on a page. Default is not set.
+      modal_full_screen_on_mobile:
+        type: string
+        title: Modal full screen on mobile
+        description: Default is not `"true"`.
       modal_title:
         type: string
         title: Modal title
@@ -237,6 +245,10 @@ configurations:
         type: string
         title: Modal example questions
         description: Comma separated list of example questions to show in the modal. Default is not set.
+      modal_image:
+        type: string
+        title: Modal image
+        description: Set the image for the modal header. Default is [project_logo]
       modal_image_hide:
         type: string
         title: Modal image hide
@@ -249,6 +261,18 @@ configurations:
         type: string
         title: Modal image width
         description: Default is set to `"32"`.
+      button_image:
+        type: string
+        title: Button image
+        description: Set the image for the button. Default is [project_logo]
+      button_image_height:
+        type: string
+        title: Button image height
+        description: Set the image height for the button. Default is `"32"`
+      button_image_width:
+        type: string
+        title: Button image width
+        description: Set the image width for the button. Default is `"32"`
       button_text:
         type: string
         title: Button text
