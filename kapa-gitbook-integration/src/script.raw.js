@@ -89,7 +89,7 @@
     s.setAttribute("data-project-logo", PROJECT_LOGO);
 
     for (const [key, value] of Object.entries(config)) {
-      const kebabCaseKey = key.replace("_", "-").toLowerCase();
+      const kebabCaseKey = key.replaceAll("_", "-").toLowerCase();
       if (value !== "undefined") {
         s.setAttribute(`data-${kebabCaseKey}`, value);
       }
