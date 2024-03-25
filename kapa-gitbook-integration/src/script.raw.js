@@ -90,7 +90,7 @@
 
     for (const [key, value] of Object.entries(config)) {
       const kebabCaseKey = key.replaceAll("_", "-").toLowerCase();
-      if (value !== "undefined") {
+      if (value !== `<${key}>` && value !== "undefined") {
         s.setAttribute(`data-${kebabCaseKey}`, value);
       }
     }
