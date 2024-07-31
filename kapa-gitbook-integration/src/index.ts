@@ -44,6 +44,7 @@ type KapaRuntimeContext = RuntimeContext<
       modal_header_padding_left?: string;
       modal_header_bg_color?: string;
       modal_header_border_bottom?: string;
+      modal_header_logo_hide_on_mobile?: string;
       modal_body_bg_color?: string;
       modal_body_padding_top?: string;
       modal_body_padding_right?: string;
@@ -55,11 +56,13 @@ type KapaRuntimeContext = RuntimeContext<
       modal_title_color?: string;
       modal_override_open_class?: string;
       modal_open_by_default?: string;
+      modal_full_screen_on_mobile?: string;
       modal_title?: string;
       modal_disclaimer?: string;
       modal_ask_ai_input_placeholder?: string;
       modal_search_input_placeholder?: string;
       modal_example_questions?: string;
+      modal_image?: string;
       modal_image_hide?: string;
       modal_image_height?: string;
       modal_image_width?: string;
@@ -68,6 +71,9 @@ type KapaRuntimeContext = RuntimeContext<
       switch_border_radius?: string;
       switch_bg_color?: string;
       switch_show_icons?: string;
+      button_image?: string;
+      button_image_height?: string;
+      button_image_width?: string;
       button_text?: string;
       font_family?: string;
       serch_mode_enabled?: string;
@@ -111,6 +117,8 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
       environment.spaceInstallation.configuration.modal_override_open_class,
     modal_open_by_default:
       environment.spaceInstallation.configuration.modal_open_by_default,
+    modal_full_screen_on_mobile:
+      environment.spaceInstallation.configuration.modal_full_screen_on_mobile,
     modal_title: environment.spaceInstallation.configuration.modal_title,
     modal_disclaimer:
       environment.spaceInstallation.configuration.modal_disclaimer,
@@ -122,6 +130,7 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
         .modal_search_input_placeholder,
     modal_example_questions:
       environment.spaceInstallation.configuration.modal_example_questions,
+    modal_image: environment.spaceInstallation.configuration.modal_image,
     modal_image_hide:
       environment.spaceInstallation.configuration.modal_image_hide,
     modal_image_height:
@@ -169,6 +178,9 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
       environment.spaceInstallation.configuration.modal_header_bg_color,
     modal_header_border_bottom:
       environment.spaceInstallation.configuration.modal_header_border_bottom,
+    modal_header_logo_hide_on_mobile:
+      environment.spaceInstallation.configuration
+        .modal_header_logo_hide_on_mobile,
     modal_body_bg_color:
       environment.spaceInstallation.configuration.modal_body_bg_color,
     modal_body_padding_top:
@@ -196,6 +208,11 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
     switch_show_icons:
       environment.spaceInstallation.configuration.switch_show_icons,
     button_text: environment.spaceInstallation.configuration.button_text,
+    button_image: environment.spaceInstallation.configuration.button_image,
+    button_image_height:
+      environment.spaceInstallation.configuration.button_image_height,
+    button_image_width:
+      environment.spaceInstallation.configuration.button_image_width,
     font_family: environment.spaceInstallation.configuration.font_family,
     serch_mode_enabled:
       environment.spaceInstallation.configuration.serch_mode_enabled,
