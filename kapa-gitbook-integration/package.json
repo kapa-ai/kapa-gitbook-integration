@@ -13,6 +13,11 @@
         "@gitbook/cli": "^0.20.0",
         "@gitbook/eslint-config": "*",
         "@gitbook/tsconfig": "*",
-        "eslint": "^8.25.0"
+        "esbuild": "^0.25.0"
+    },
+    "overrides": {
+        "@gitbook/cli": {
+            "esbuild": "0.25.0"
+        }
     }
 }
