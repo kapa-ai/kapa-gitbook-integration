@@ -12,6 +12,7 @@
     "devDependencies": {
         "@gitbook/cli": "^0.20.0",
         "@gitbook/eslint-config": "*",
-        "@gitbook/tsconfig": "*"
+        "@gitbook/tsconfig": "*",
+        "eslint": "^8.25.0"
     }
 }
