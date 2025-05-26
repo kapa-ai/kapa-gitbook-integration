@@ -277,58 +277,68 @@ configurations:
         type: string
         title: Global font family
         description: Default `"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif"`.
-      serch_mode_enabled:
+      search_mode_enabled:
         type: string
         title: Serach mode enabled
         description: Set to `"true"` to enable the search mode. Default is `"false"`.
-      serch_mode_default:
+      search_mode_default:
         type: string
         title: Serach mode default
         description: Set to `"true"` to set search as the default mode. Default is `"false"`.
-      serch_display_num_results:
+      search_display_num_results:
         type: string
         title: Search display num results
         description: The amount of results displayed in each "page". Default is `"5"`.
-      serch_include_source_names:
+      search_include_source_names:
         type: string
         title: Search include source names
         description: Set of source names that should be included in the search. Default is not set.
-      serch_source_group_order:
+      search_source_group_order:
         type: string
         title: Search source group order
         description: Order of source names by wich sources should be grouped. Default is note set.
-      serch_keyboard_nav_enabled:
+      search_keyboard_nav_enabled:
         type: string
         title: Search keyboard nav enabled
         description: Set to `"false"` to disable keyboard navigation. Default is `"true"`.
-      serch_result_hover_bg_color:
+      search_result_hover_bg_color:
         type: string
         title: Search result hover bg color
         description: Default is `"#F1F1F1"`
-      serch_result_primary_text_color:
+      search_result_primary_text_color:
         type: string
         title: Search result text color
         description: Default is the project color.
-      serch_result_secondary_text_color:
+      search_result_secondary_text_color:
         type: string
         title: Search result sec. text color
         description: Default is `"#868e96"`.
-      serch_result_badge_bg_color:
+      search_result_badge_bg_color:
         type: string
         title: Search result badge bg color
         description: Default is not set.
-      serch_result_badge_text_color:
+      search_result_badge_text_color:
         type: string
         title: Search result badge text color
         description: Default is not set.
-      serch_show_more_button_text_color:
+      search_show_more_button_text_color:
         type: string
         title: Show more text color
         description: Default is the project color.
-      serch_show_more_button_hover_bg_color:
+      search_show_more_button_hover_bg_color:
         type: string
         title: Show more hover bg color
         description: Default is not set.
+      data-user-analytics-cookie-enabled:
+        type: boolean
+        title: User analytics enabled / disabled
+        description: Track user analytics using cookies. Default is true.
+        default: true
+      data-button-animation-enabled:
+        type: boolean
+        title: Button animation enabled / disabled
+        description: Enable or disable the wiggle animation of the kapa.ai button, which is used to draw the user's attention. Default is true.
+        default: true
     required:
       - website_id
       - project_name

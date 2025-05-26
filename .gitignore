@@ -3,3 +3,5 @@
 node_modules
 
 .gitbook-dev.yaml
+
+.DS_Store

@@ -11,10 +11,18 @@ type KapaRuntimeContext = RuntimeContext<
   RuntimeEnvironment<
     {},
     {
+      // Required
       website_id?: string;
       project_name?: string;
       project_color?: string;
       project_logo?: string;
+
+      // General style
+      font_family?: string;
+
+      // Floating widget display
+      button_text?: string;
+      button_hide?: string;
       button_position_top?: string;
       button_position_bottom?: string;
       button_position_left?: string;
@@ -31,7 +39,14 @@ type KapaRuntimeContext = RuntimeContext<
       button_text_font_family?: string;
       button_text_color?: string;
       button_text_shadow?: string;
-      button_hide?: string;
+      button_animation_enabled?: string;
+
+      // Modal display
+      modal_title?: string;
+      modal_title_font_family?: string;
+      modal_title_font_weight?: string;
+      modal_title_font_size?: string;
+      modal_title_color?: string;
       modal_size?: string;
       modal_x_offset?: string;
       modal_y_offset?: string;
@@ -49,40 +64,42 @@ type KapaRuntimeContext = RuntimeContext<
       modal_body_padding_right?: string;
       modal_body_padding_bottom?: string;
       modal_body_padding_left?: string;
-      modal_title_font_family?: string;
-      modal_title_font_weight?: string;
-      modal_title_font_size?: string;
-      modal_title_color?: string;
-      modal_override_open_class?: string;
-      modal_open_by_default?: string;
-      modal_title?: string;
       modal_disclaimer?: string;
       modal_ask_ai_input_placeholder?: string;
       modal_search_input_placeholder?: string;
       modal_example_questions?: string;
       modal_image_hide?: string;
       modal_image_height?: string;
-      modal_image_width?: string;
+      modal_image_width?: string;    
+
+      // Modal behavior
+      modal_override_open_class?: string;
+      modal_open_by_default?: string;
+
+      // Switch display
       switch_color?: string;
       switch_border?: string;
       switch_border_radius?: string;
       switch_bg_color?: string;
       switch_show_icons?: string;
-      button_text?: string;
-      font_family?: string;
-      serch_mode_enabled?: string;
-      serch_mode_default?: string;
-      serch_display_num_results?: string;
-      serch_include_source_names?: string;
-      serch_source_group_order?: string;
-      serch_keyboard_nav_enabled?: string;
-      serch_result_hover_bg_color?: string;
-      serch_result_primary_text_color?: string;
-      serch_result_secondary_text_color?: string;
-      serch_result_badge_bg_color?: string;
-      serch_result_badge_text_color?: string;
-      serch_show_more_button_text_color?: string;
-      serch_show_more_button_hover_bg_color?: string;
+
+      // User tracking
+      user_analytics_cookie_enabled?: string;
+      
+      // Search mode
+      search_mode_enabled?: string;
+      search_mode_default?: string;
+      search_display_num_results?: string;
+      search_include_source_names?: string;
+      search_source_group_order?: string;
+      search_keyboard_nav_enabled?: string;
+      search_result_hover_bg_color?: string;
+      search_result_primary_text_color?: string;
+      search_result_secondary_text_color?: string;
+      search_result_badge_bg_color?: string;
+      search_result_badge_text_color?: string;
+      search_show_more_button_text_color?: string;
+      search_show_more_button_hover_bg_color?: string;
     }
   >
 >;
@@ -152,19 +169,21 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
     switch_show_icons: environment.siteInstallation?.configuration?.switch_show_icons ?? environment.spaceInstallation?.configuration?.switch_show_icons,
     button_text: environment.siteInstallation?.configuration?.button_text ?? environment.spaceInstallation?.configuration?.button_text,
     font_family: environment.siteInstallation?.configuration?.font_family ?? environment.spaceInstallation?.configuration?.font_family,
-    serch_mode_enabled: environment.siteInstallation?.configuration?.serch_mode_enabled ?? environment.spaceInstallation?.configuration?.serch_mode_enabled,
-    serch_mode_default: environment.siteInstallation?.configuration?.serch_mode_default ?? environment.spaceInstallation?.configuration?.serch_mode_default,
-    serch_display_num_results: environment.siteInstallation?.configuration?.serch_display_num_results ?? environment.spaceInstallation?.configuration?.serch_display_num_results,
-    serch_include_source_names: environment.siteInstallation?.configuration?.serch_include_source_names ?? environment.spaceInstallation?.configuration?.serch_include_source_names,
-    serch_source_group_order: environment.siteInstallation?.configuration?.serch_source_group_order ?? environment.spaceInstallation?.configuration?.serch_source_group_order,
-    serch_keyboard_nav_enabled: environment.siteInstallation?.configuration?.serch_keyboard_nav_enabled ?? environment.spaceInstallation?.configuration?.serch_keyboard_nav_enabled,
-    serch_result_hover_bg_color: environment.siteInstallation?.configuration?.serch_result_hover_bg_color ?? environment.spaceInstallation?.configuration?.serch_result_hover_bg_color,
-    serch_result_primary_text_color: environment.siteInstallation?.configuration?.serch_result_primary_text_color ?? environment.spaceInstallation?.configuration?.serch_result_primary_text_color,
-    serch_result_secondary_text_color: environment.siteInstallation?.configuration?.serch_result_secondary_text_color ?? environment.spaceInstallation?.configuration?.serch_result_secondary_text_color,
-    serch_result_badge_bg_color: environment.siteInstallation?.configuration?.serch_result_badge_bg_color ?? environment.spaceInstallation?.configuration?.serch_result_badge_bg_color,
-    serch_result_badge_text_color: environment.siteInstallation?.configuration?.serch_result_badge_text_color ?? environment.spaceInstallation?.configuration?.serch_result_badge_text_color,
-    serch_show_more_button_text_color: environment.siteInstallation?.configuration?.serch_show_more_button_text_color ?? environment.spaceInstallation?.configuration?.serch_show_more_button_text_color,
-    serch_show_more_button_hover_bg_color: environment.siteInstallation?.configuration?.serch_show_more_button_hover_bg_color ?? environment.spaceInstallation?.configuration?.serch_show_more_button_hover_bg_color,
+    search_mode_enabled: environment.siteInstallation?.configuration?.search_mode_enabled ?? environment.spaceInstallation?.configuration?.search_mode_enabled,
+    search_mode_default: environment.siteInstallation?.configuration?.search_mode_default ?? environment.spaceInstallation?.configuration?.search_mode_default,
+    search_display_num_results: environment.siteInstallation?.configuration?.search_display_num_results ?? environment.spaceInstallation?.configuration?.search_display_num_results,
+    search_include_source_names: environment.siteInstallation?.configuration?.search_include_source_names ?? environment.spaceInstallation?.configuration?.search_include_source_names,
+    search_source_group_order: environment.siteInstallation?.configuration?.search_source_group_order ?? environment.spaceInstallation?.configuration?.search_source_group_order,
+    search_keyboard_nav_enabled: environment.siteInstallation?.configuration?.search_keyboard_nav_enabled ?? environment.spaceInstallation?.configuration?.search_keyboard_nav_enabled,
+    search_result_hover_bg_color: environment.siteInstallation?.configuration?.search_result_hover_bg_color ?? environment.spaceInstallation?.configuration?.search_result_hover_bg_color,
+    search_result_primary_text_color: environment.siteInstallation?.configuration?.search_result_primary_text_color ?? environment.spaceInstallation?.configuration?.search_result_primary_text_color,
+    search_result_secondary_text_color: environment.siteInstallation?.configuration?.search_result_secondary_text_color ?? environment.spaceInstallation?.configuration?.search_result_secondary_text_color,
+    search_result_badge_bg_color: environment.siteInstallation?.configuration?.search_result_badge_bg_color ?? environment.spaceInstallation?.configuration?.search_result_badge_bg_color,
+    search_result_badge_text_color: environment.siteInstallation?.configuration?.search_result_badge_text_color ?? environment.spaceInstallation?.configuration?.search_result_badge_text_color,
+    search_show_more_button_text_color: environment.siteInstallation?.configuration?.search_show_more_button_text_color ?? environment.spaceInstallation?.configuration?.search_show_more_button_text_color,
+    search_show_more_button_hover_bg_color: environment.siteInstallation?.configuration?.search_show_more_button_hover_bg_color ?? environment.spaceInstallation?.configuration?.search_show_more_button_hover_bg_color,
+    user_analytics_cookie_enabled: environment.siteInstallation?.configuration?.data_user_analytics_cookie_enabled ?? environment.spaceInstallation?.configuration?.user_analytics_cookie_enabled,
+    button_animation_enabled: environment.siteInstallation?.configuration?.data_button_animation_enabled ?? environment.spaceInstallation?.configuration?.button_animation_enabled,
   };
 
   if (!website_id || !project_name || !project_color || !project_logo) {
