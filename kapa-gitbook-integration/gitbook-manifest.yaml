@@ -24,7 +24,7 @@ summary: |
 
   # Configure
 
-  You can configure the integration on single or multiple public spaces. To configure and enable your kapa.ai instance you can follow this [guide](https://docs.kapa.ai/installation-widget#g-gitbook-).
+  You can configure the integration on single or multiple public spaces. To configure and enable your kapa.ai instance you can follow this [guide](https://docs.kapa.ai/integrations/website-widget/installation/gitbook).
 script: src/index.ts
 # The following scope(s) are available only to GitBook Staff
 # See https://developer.gitbook.com/integrations/configurations#scopes
@@ -128,11 +128,11 @@ configurations:
       modal_x_offset:
         type: string
         title: Modal X offset
-        description: Choose the offset of the modal on the X axist. Default is not set.
+        description: Choose the offset of the modal on the X axis. Default is not set.
       modal_y_offset:
         type: string
         title: Modal Y offset
-        description: Choose the offset of the modal on the Y axist. Default is "10vh".
+        description: Choose the offset of the modal on the Y axis. Default is "10vh".
       modal_border_radius:
         type: string
         title: Modal border radius
@@ -296,7 +296,7 @@ configurations:
       search_source_group_order:
         type: string
         title: Search source group order
-        description: Order of source names by wich sources should be grouped. Default is note set.
+        description: Order of source names by which sources should be grouped. Default is note set.
       search_keyboard_nav_enabled:
         type: string
         title: Search keyboard nav enabled
@@ -329,15 +329,15 @@ configurations:
         type: string
         title: Show more hover bg color
         description: Default is not set.
-      data-user-analytics-cookie-enabled:
-        type: boolean
+      user-analytics-cookie-enabled:
+        type: string
         title: User analytics enabled / disabled
-        description: Track user analytics using cookies. Default is true.
+        description: Track user analytics using cookies. Default is "true".
         default: true
-      data-button-animation-enabled:
-        type: boolean
+      button-animation-enabled:
+        type: string
         title: Button animation enabled / disabled
-        description: Enable or disable the wiggle animation of the kapa.ai button, which is used to draw the user's attention. Default is true.
+        description: Enable or disable the wiggle animation of the kapa.ai button, which is used to draw the user's attention. Default is "true".
         default: true
     required:
       - website_id

@@ -182,8 +182,8 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
     search_result_badge_text_color: environment.siteInstallation?.configuration?.search_result_badge_text_color ?? environment.spaceInstallation?.configuration?.search_result_badge_text_color,
     search_show_more_button_text_color: environment.siteInstallation?.configuration?.search_show_more_button_text_color ?? environment.spaceInstallation?.configuration?.search_show_more_button_text_color,
     search_show_more_button_hover_bg_color: environment.siteInstallation?.configuration?.search_show_more_button_hover_bg_color ?? environment.spaceInstallation?.configuration?.search_show_more_button_hover_bg_color,
-    user_analytics_cookie_enabled: environment.siteInstallation?.configuration?.data_user_analytics_cookie_enabled ?? environment.spaceInstallation?.configuration?.user_analytics_cookie_enabled,
-    button_animation_enabled: environment.siteInstallation?.configuration?.data_button_animation_enabled ?? environment.spaceInstallation?.configuration?.button_animation_enabled,
+    user_analytics_cookie_enabled: environment.siteInstallation?.configuration?.user_analytics_cookie_enabled ?? environment.spaceInstallation?.configuration?.user_analytics_cookie_enabled,
+    button_animation_enabled: environment.siteInstallation?.configuration?.button_animation_enabled ?? environment.spaceInstallation?.configuration?.button_animation_enabled,
   };
 
   if (!website_id || !project_name || !project_color || !project_logo) {

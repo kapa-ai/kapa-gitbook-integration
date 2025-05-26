@@ -15,7 +15,7 @@
     PROJECT_COLOR: "<PROJECT_COLOR>",
     PROJECT_LOGO: "<PROJECT_LOGO>",
 
-    // General style ---
+    // General style
     FONT_FAMILY: "<FONT_FAMILY>",
 
     // Floating widget display
