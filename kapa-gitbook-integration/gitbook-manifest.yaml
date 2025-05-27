@@ -333,12 +333,10 @@ configurations:
         type: string
         title: User analytics enabled / disabled
         description: Track user analytics using cookies. Default is "true".
-        default: true
       button_animation_enabled:
         type: string
         title: Button animation enabled / disabled
         description: Enable or disable the wiggle animation of the kapa.ai button, which is used to draw the user's attention. Default is "true".
-        default: true
     required:
       - website_id
       - project_name
