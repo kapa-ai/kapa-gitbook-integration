@@ -7,6 +7,7 @@
   const PROJECT_NAME = "<PROJECT_NAME>";
   const PROJECT_COLOR = "<PROJECT_COLOR>";
   const PROJECT_LOGO = "<PROJECT_LOGO>";
+  const NATIVE_AI_EXPERIENCE = "<NATIVE_AI_EXPERIENCE>";
 
   const config = {
     BUTTON_POSITION_TOP: "<BUTTON_POSITION_TOP>",
@@ -99,6 +100,20 @@
     x.parentNode.insertBefore(s, x);
 
     w.__KAPA_WIDGET_LOADED__ = true;
+
+    if (NATIVE_AI_EXPERIENCE) {
+      // Disable floating window
+      // document.querySelector('.kapa-widget-container').style.display = 'none';
+
+      // Register and open Kapa Window from GitBook UI
+      window.GitBook.registerCustomAssistant({
+        label: "Ask Kapa AI",
+        icon: "...",
+        onOpen: (query) => {
+          // Open Kapa window with query
+        },
+      });
+    }
   };
   if (w.attachEvent) {
     w.attachEvent("onload", l);
