@@ -340,7 +340,7 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
     .replace("<PROJECT_NAME>", project_name)
     .replace("<PROJECT_COLOR>", project_color)
     .replace("<PROJECT_LOGO>", project_logo)
-    .replace("<NATIVE_AI_EXPERIENCE>", native_ai_experience);
+    .replace("<NATIVE_AI_EXPERIENCE>", native_ai_experience ? "true" : "false");
 
   for (const [key, value] of Object.entries(config)) {
     if (value) {

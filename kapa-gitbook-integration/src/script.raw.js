@@ -101,7 +101,7 @@
 
     w.__KAPA_WIDGET_LOADED__ = true;
 
-    if (NATIVE_AI_EXPERIENCE) {
+    if (NATIVE_AI_EXPERIENCE === "true") {
       // Disable floating window
       // document.querySelector('.kapa-widget-container').style.display = 'none';
 
