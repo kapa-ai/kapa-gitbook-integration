@@ -108,7 +108,7 @@
       // Register and open Kapa Window from GitBook UI
       window.GitBook.registerCustomAssistant({
         label: "Ask Kapa AI",
-        icon: "...",
+        icon: "sparkle",
         onOpen: (query) => {
           // Open Kapa window with query
         },
