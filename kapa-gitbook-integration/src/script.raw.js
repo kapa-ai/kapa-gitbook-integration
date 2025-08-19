@@ -98,7 +98,8 @@
     SEARCH_RESULT_BADGE_BG_COLOR: "<SEARCH_RESULT_BADGE_BG_COLOR>",
     SEARCH_RESULT_BADGE_TEXT_COLOR: "<SEARCH_RESULT_BADGE_TEXT_COLOR>",
     SEARCH_SHOW_MORE_BUTTON_TEXT_COLOR: "<SEARCH_SHOW_MORE_BUTTON_TEXT_COLOR>",
-    SEARCH_SHOW_MORE_BUTTON_HOVER_BG_COLOR: "<SEARCH_SHOW_MORE_BUTTON_HOVER_BG_COLOR>",
+    SEARCH_SHOW_MORE_BUTTON_HOVER_BG_COLOR:
+      "<SEARCH_SHOW_MORE_BUTTON_HOVER_BG_COLOR>",
   };
 
   var l = function () {
@@ -132,7 +133,7 @@
         label: "Kapa AI",
         icon: "sparkle",
         ui: false,
-        onOpen: (query) => {
+        open: (query) => {
           // Open Kapa window with query
         },
       });
@@ -141,7 +142,7 @@
         label: "Kapa AI",
         icon: "sparkle",
         ui: true,
-        onOpen: (query) => {
+        open: (query) => {
           // Open Kapa window with query
         },
       });
