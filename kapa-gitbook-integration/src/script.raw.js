@@ -129,7 +129,7 @@
       // document.querySelector('.kapa-widget-container').style.display = 'none';
 
       // Register and open Kapa Window from GitBook UI
-      window.GitBook.registerCustomAssistant({
+      window.GitBook.registerAssistant({
         label: "Kapa AI",
         icon: "sparkle",
         ui: false,
@@ -138,7 +138,7 @@
         },
       });
     } else {
-      window.GitBook.registerCustomAssistant({
+      window.GitBook.registerAssistant({
         label: "Kapa AI",
         icon: "sparkle",
         ui: true,
