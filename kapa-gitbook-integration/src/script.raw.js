@@ -109,6 +109,16 @@
       window.GitBook.registerCustomAssistant({
         label: "Kapa AI",
         icon: "sparkle",
+        ui: false,
+        onOpen: (query) => {
+          // Open Kapa window with query
+        },
+      });
+    } else {
+      window.GitBook.registerCustomAssistant({
+        label: "Kapa AI",
+        icon: "sparkle",
+        ui: true,
         onOpen: (query) => {
           // Open Kapa window with query
         },
