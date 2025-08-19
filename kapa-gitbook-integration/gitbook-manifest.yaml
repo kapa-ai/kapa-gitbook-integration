@@ -24,7 +24,7 @@ summary: |
 
   # Configure
 
-  You can configure the integration on single or multiple public spaces. To configure and enable your kapa.ai instance you can follow this [guide](https://docs.kapa.ai/installation-widget#g-gitbook-).
+  You can configure the integration on single or multiple public spaces. To configure and enable your kapa.ai instance you can follow this [guide](https://docs.kapa.ai/integrations/website-widget/installation/gitbook).
 script: src/index.ts
 # The following scope(s) are available only to GitBook Staff
 # See https://developer.gitbook.com/integrations/configurations#scopes
@@ -133,11 +133,11 @@ configurations:
       modal_x_offset:
         type: string
         title: Modal X offset
-        description: Choose the offset of the modal on the X axist. Default is not set.
+        description: Choose the offset of the modal on the X axis. Default is not set.
       modal_y_offset:
         type: string
         title: Modal Y offset
-        description: Choose the offset of the modal on the Y axist. Default is "10vh".
+        description: Choose the offset of the modal on the Y axis. Default is "10vh".
       modal_border_radius:
         type: string
         title: Modal border radius
@@ -282,58 +282,66 @@ configurations:
         type: string
         title: Global font family
         description: Default `"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif"`.
-      serch_mode_enabled:
+      search_mode_enabled:
         type: string
         title: Serach mode enabled
         description: Set to `"true"` to enable the search mode. Default is `"false"`.
-      serch_mode_default:
+      search_mode_default:
         type: string
         title: Serach mode default
         description: Set to `"true"` to set search as the default mode. Default is `"false"`.
-      serch_display_num_results:
+      search_display_num_results:
         type: string
         title: Search display num results
         description: The amount of results displayed in each "page". Default is `"5"`.
-      serch_include_source_names:
+      search_include_source_names:
         type: string
         title: Search include source names
         description: Set of source names that should be included in the search. Default is not set.
-      serch_source_group_order:
+      search_source_group_order:
         type: string
         title: Search source group order
-        description: Order of source names by wich sources should be grouped. Default is note set.
-      serch_keyboard_nav_enabled:
+        description: Order of source names by which sources should be grouped. Default is note set.
+      search_keyboard_nav_enabled:
         type: string
         title: Search keyboard nav enabled
         description: Set to `"false"` to disable keyboard navigation. Default is `"true"`.
-      serch_result_hover_bg_color:
+      search_result_hover_bg_color:
         type: string
         title: Search result hover bg color
         description: Default is `"#F1F1F1"`
-      serch_result_primary_text_color:
+      search_result_primary_text_color:
         type: string
         title: Search result text color
         description: Default is the project color.
-      serch_result_secondary_text_color:
+      search_result_secondary_text_color:
         type: string
         title: Search result sec. text color
         description: Default is `"#868e96"`.
-      serch_result_badge_bg_color:
+      search_result_badge_bg_color:
         type: string
         title: Search result badge bg color
         description: Default is not set.
-      serch_result_badge_text_color:
+      search_result_badge_text_color:
         type: string
         title: Search result badge text color
         description: Default is not set.
-      serch_show_more_button_text_color:
+      search_show_more_button_text_color:
         type: string
         title: Show more text color
         description: Default is the project color.
-      serch_show_more_button_hover_bg_color:
+      search_show_more_button_hover_bg_color:
         type: string
         title: Show more hover bg color
         description: Default is not set.
+      user_analytics_cookie_enabled:
+        type: string
+        title: Track user analytics
+        description: Enable / disable user analytics tracking using cookies. Default is "true".
+      button_animation_enabled:
+        type: string
+        title: Button animation enabled
+        description: Enables the wiggle animation of the button, used to draw user attention. Default is "true".
     required:
       - native_ai_experience
       - website_id
