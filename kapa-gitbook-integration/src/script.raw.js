@@ -126,7 +126,7 @@
 
     if (NATIVE_AI_EXPERIENCE === "true") {
       // Disable floating window
-      // document.querySelector('.kapa-widget-container').style.display = 'none';
+      document.getElementById("kapa-button").style.display = "none";
 
       // Register and open Kapa Window from GitBook UI
       window.GitBook.registerAssistant({
@@ -134,7 +134,11 @@
         icon: "sparkle",
         ui: false,
         open: (query) => {
-          // Open Kapa window with query
+          window.Kapa.open({
+            mode: "ai",
+            query: query,
+            submit: true,
+          });
         },
       });
     } else {
@@ -143,7 +147,11 @@
         icon: "sparkle",
         ui: true,
         open: (query) => {
-          // Open Kapa window with query
+          window.Kapa.open({
+            mode: "ai",
+            query: query,
+            submit: true,
+          });
         },
       });
     }
