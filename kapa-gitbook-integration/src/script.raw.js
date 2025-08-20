@@ -123,40 +123,42 @@
     var x = d.getElementsByTagName("script")[0];
     x.parentNode.insertBefore(s, x);
 
-    w.__KAPA_WIDGET_LOADED__ = true;
-    
-    window.Kapa("render", {
-      onRender: () => {
-        if (NATIVE_AI_EXPERIENCE === "true") {
-          // Register and open Kapa Window from GitBook UI
-          window.GitBook.registerAssistant({
-            label: "Kapa AI",
-            icon: "sparkle",
-            ui: true,
-            open: (query) => {
-              window.Kapa?.open({
-                mode: "ai",
-                query: query,
-                submit: true,
-              });
-            },
-          });
-        } else {
-          window.GitBook.registerAssistant({
-            label: "Kapa AI",
-            icon: "sparkle",
-            ui: false,
-            open: (query) => {
-              window.Kapa?.open({
-                mode: "ai",
-                query: query,
-                submit: true,
-              });
-            },
-          });
-        }
-      },
-    });
+    s.onload = () => {
+      w.__KAPA_WIDGET_LOADED__ = true;
+      
+      window.Kapa("render", {
+        onRender: () => {
+          if (NATIVE_AI_EXPERIENCE === "true") {
+            // Register and open Kapa Window from GitBook UI
+            window.GitBook.registerAssistant({
+              label: "Kapa AI",
+              icon: "sparkle",
+              ui: true,
+              open: (query) => {
+                window.Kapa?.open({
+                  mode: "ai",
+                  query: query,
+                  submit: true,
+                });
+              },
+            });
+          } else {
+            window.GitBook.registerAssistant({
+              label: "Kapa AI",
+              icon: "sparkle",
+              ui: false,
+              open: (query) => {
+                window.Kapa?.open({
+                  mode: "ai",
+                  query: query,
+                  submit: true,
+                });
+              },
+            });
+          }
+        },
+      });
+    };
   };
   if (w.attachEvent) {
     w.attachEvent("onload", l);
