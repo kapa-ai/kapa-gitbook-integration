@@ -1,23 +1,23 @@
 {
-    "name": "kapa-gitbook-integration",
-    "private": true,
-    "scripts": {
-        "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-        "typecheck": "tsc --noEmit",
-        "publish": "gitbook publish ."
-    },
-    "dependencies": {
-        "@gitbook/runtime": "*"
-    },
-    "devDependencies": {
-        "@gitbook/cli": "^0.20.0",
-        "@gitbook/eslint-config": "*",
-        "@gitbook/tsconfig": "*",
-        "esbuild": "^0.25.0"
-    },
-    "overrides": {
-        "@gitbook/cli": {
-            "esbuild": "0.25.0"
-        }
+  "name": "kapa-gitbook-integration",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "typecheck": "tsc --noEmit",
+    "publish": "gitbook publish ."
+  },
+  "dependencies": {
+    "@gitbook/runtime": "*"
+  },
+  "devDependencies": {
+    "@gitbook/cli": "*",
+    "@gitbook/eslint-config": "*",
+    "@gitbook/tsconfig": "*",
+    "esbuild": "^0.25.0"
+  },
+  "overrides": {
+    "@gitbook/cli": {
+      "esbuild": "0.25.0"
     }
+  }
 }

@@ -111,6 +111,7 @@
     s.setAttribute("data-project-name", PROJECT_NAME);
     s.setAttribute("data-project-color", PROJECT_COLOR);
     s.setAttribute("data-project-logo", PROJECT_LOGO);
+    s.setAttribute("data-button-hide", NATIVE_AI_EXPERIENCE === "true" ? "true" : "false");
 
     for (const [key, value] of Object.entries(config)) {
       const kebabCaseKey = key.replaceAll("_", "-").toLowerCase();
@@ -122,19 +123,17 @@
     var x = d.getElementsByTagName("script")[0];
     x.parentNode.insertBefore(s, x);
 
-    w.__KAPA_WIDGET_LOADED__ = true;
-
-    if (NATIVE_AI_EXPERIENCE === "true") {
-      // Disable floating window
-      document.getElementById("kapa-button").style.display = "none";
-
+    s.onload = () => {
+      w.__KAPA_WIDGET_LOADED__ = true;
+      
+      if (NATIVE_AI_EXPERIENCE === "true") {
       // Register and open Kapa Window from GitBook UI
       window.GitBook.registerAssistant({
         label: "Kapa AI",
         icon: "sparkle",
-        ui: false,
+        ui: true,
         open: (query) => {
-          window.Kapa.open({
+          window.Kapa?.open({
             mode: "ai",
             query: query,
             submit: true,
@@ -145,9 +144,9 @@
       window.GitBook.registerAssistant({
         label: "Kapa AI",
         icon: "sparkle",
-        ui: true,
+        ui: false,
         open: (query) => {
-          window.Kapa.open({
+          window.Kapa?.open({
             mode: "ai",
             query: query,
             submit: true,
@@ -155,6 +154,7 @@
         },
       });
     }
+    };
   };
   if (w.attachEvent) {
     w.attachEvent("onload", l);
