@@ -1,6 +1,19 @@
 (function () {
   var w = window;
   var d = document;
+
+  let k = window.Kapa;
+  if (!k) {
+    let i = function () {
+      i.c(arguments);
+    };
+    i.q = [];
+    i.c = function (args) {
+      i.q.push(args);
+    };
+    window.Kapa = i;
+  }
+
   if (w.__KAPA_WIDGET_LOADED__) return;
 
   const WEBSITE_ID = "<WEBSITE_ID>";
@@ -111,7 +124,10 @@
     s.setAttribute("data-project-name", PROJECT_NAME);
     s.setAttribute("data-project-color", PROJECT_COLOR);
     s.setAttribute("data-project-logo", PROJECT_LOGO);
-    s.setAttribute("data-button-hide", NATIVE_AI_EXPERIENCE === "true" ? "true" : "false");
+    s.setAttribute(
+      "data-button-hide",
+      NATIVE_AI_EXPERIENCE === "true" ? "true" : "false"
+    );
 
     for (const [key, value] of Object.entries(config)) {
       const kebabCaseKey = key.replaceAll("_", "-").toLowerCase();
@@ -123,42 +139,20 @@
     var x = d.getElementsByTagName("script")[0];
     x.parentNode.insertBefore(s, x);
 
-    s.onload = () => {
-      w.__KAPA_WIDGET_LOADED__ = true;
-      
-      window.Kapa("render", {
-        onRender: () => {
-          if (NATIVE_AI_EXPERIENCE === "true") {
-            // Register and open Kapa Window from GitBook UI
-            window.GitBook.registerAssistant({
-              label: "Kapa AI",
-              icon: "sparkle",
-              ui: true,
-              open: (query) => {
-                window.Kapa?.open({
-                  mode: "ai",
-                  query: query,
-                  submit: true,
-                });
-              },
-            });
-          } else {
-            window.GitBook.registerAssistant({
-              label: "Kapa AI",
-              icon: "sparkle",
-              ui: false,
-              open: (query) => {
-                window.Kapa?.open({
-                  mode: "ai",
-                  query: query,
-                  submit: true,
-                });
-              },
-            });
-          }
-        },
-      });
-    };
+    w.__KAPA_WIDGET_LOADED__ = true;
+
+    window.GitBook.registerAssistant({
+      label: "Kapa AI",
+      icon: "sparkle",
+      ui: NATIVE_AI_EXPERIENCE === "true",
+      open: (query) => {
+        window.Kapa("open", {
+          mode: "ai",
+          query: query,
+          submit: true,
+        });
+      },
+    });
   };
   if (w.attachEvent) {
     w.attachEvent("onload", l);
