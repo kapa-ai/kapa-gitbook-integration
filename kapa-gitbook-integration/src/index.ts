@@ -72,6 +72,17 @@ type KapaRuntimeContext = RuntimeContext<
       modal_image_hide?: string;
       modal_image_height?: string;
       modal_image_width?: string;
+      modal_with_overlay?: string;
+      modal_overlay_bg_color?: string;
+      modal_overlay_opacity?: string;
+      modal_inner_flex_direction?: string;
+      modal_inner_justify_content?: string;
+      modal_inner_max_width?: string;
+      modal_inner_position_right?: string;
+      modal_inner_position_left?: string;
+      modal_inner_position_bottom?: string;
+      modal_z_index?: string;
+      modal_lock_scroll?: string;
 
       // Modal behavior
       modal_override_open_class?: string;
@@ -274,6 +285,41 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
     modal_title_color:
       environment.siteInstallation?.configuration?.modal_title_color ??
       environment.spaceInstallation?.configuration?.modal_title_color,
+    modal_with_overlay:
+      environment.siteInstallation?.configuration?.modal_with_overlay ??
+      environment.spaceInstallation?.configuration?.modal_with_overlay,
+    modal_overlay_bg_color:
+      environment.siteInstallation?.configuration?.modal_overlay_bg_color ??
+      environment.spaceInstallation?.configuration?.modal_overlay_bg_color,
+    modal_overlay_opacity:
+      environment.siteInstallation?.configuration?.modal_overlay_opacity ??
+      environment.spaceInstallation?.configuration?.modal_overlay_opacity,
+    modal_inner_flex_direction:
+      environment.siteInstallation?.configuration?.modal_inner_flex_direction ??
+      environment.spaceInstallation?.configuration?.modal_inner_flex_direction,
+    modal_inner_justify_content:
+      environment.siteInstallation?.configuration
+        ?.modal_inner_justify_content ??
+      environment.spaceInstallation?.configuration?.modal_inner_justify_content,
+    modal_inner_max_width:
+      environment.siteInstallation?.configuration?.modal_inner_max_width ??
+      environment.spaceInstallation?.configuration?.modal_inner_max_width,
+    modal_inner_position_right:
+      environment.siteInstallation?.configuration?.modal_inner_position_right ??
+      environment.spaceInstallation?.configuration?.modal_inner_position_right,
+    modal_inner_position_left:
+      environment.siteInstallation?.configuration?.modal_inner_position_left ??
+      environment.spaceInstallation?.configuration?.modal_inner_position_left,
+    modal_inner_position_bottom:
+      environment.siteInstallation?.configuration
+        ?.modal_inner_position_bottom ??
+      environment.spaceInstallation?.configuration?.modal_inner_position_bottom,
+    modal_z_index:
+      environment.siteInstallation?.configuration?.modal_z_index ??
+      environment.spaceInstallation?.configuration?.modal_z_index,
+    modal_lock_scroll:
+      environment.siteInstallation?.configuration?.modal_lock_scroll ??
+      environment.spaceInstallation?.configuration?.modal_lock_scroll,
     switch_color:
       environment.siteInstallation?.configuration?.switch_color ??
       environment.spaceInstallation?.configuration?.switch_color,
