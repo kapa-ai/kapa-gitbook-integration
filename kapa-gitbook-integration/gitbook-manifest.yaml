@@ -254,6 +254,50 @@ configurations:
         type: string
         title: Modal image width
         description: Default is set to `"32"`.
+      modal_with_overlay:
+        type: string
+        title: Modal with overlay
+        description: Set to "true" to show an overlay on the page when the modal is open. Default is not set.
+      modal_overlay_bg_color:
+        type: string
+        title: Modal overlay background color
+        description: Choose the background color of the overlay. Default is not set.
+      modal_overlay_opacity:
+        type: string
+        title: Modal overlay opacity
+        description: Choose the opacity of the overlay. Default is not set.
+      modal_inner_flex_direction:
+        type: string
+        title: Modal inner flex direction
+        description: Choose the flex direction of the modal inner. Default is not set.
+      modal_inner_justify_content:
+        type: string
+        title: Modal inner justify content
+        description: Choose the justify content of the modal inner. Default is not set.
+      modal_inner_max_width:
+        type: string
+        title: Modal inner max width
+        description: Choose the max width of the modal inner. Default is not set.
+      modal_inner_position_right:
+        type: string
+        title: Modal inner position right
+        description: Choose the position of the modal inner on the right. Default is not set.
+      modal_inner_position_left:
+        type: string
+        title: Modal inner position left
+        description: Choose the position of the modal inner on the left. Default is not set.
+      modal_inner_position_bottom:
+        type: string
+        title: Modal inner position bottom
+        description: Choose the position of the modal inner on the bottom. Default is not set.
+      modal_z_index:
+        type: string
+        title: Modal z index
+        description: Choose the z index of the modal. Default is not set.
+      modal_lock_scroll:
+        type: string
+        title: Modal lock scroll
+        description: Set to "true" to lock the scroll when the modal is open. Default is not set.
       button_text:
         type: string
         title: Button text
