@@ -37,6 +37,11 @@ secrets: {}
 configurations:
   site:
     properties:
+      native_ai_experience:
+        type: boolean
+        title: Native AI experience
+        description: Set to "true" to enable the built-in AI experience. Default is "false".
+        default: false
       website_id:
         type: string
         title: Website ID
@@ -338,6 +343,7 @@ configurations:
         title: Button animation enabled
         description: Enables the wiggle animation of the button, used to draw user attention. Default is "true".
     required:
+      - native_ai_experience
       - website_id
       - project_name
       - project_color

@@ -1,12 +1,26 @@
 (function () {
   var w = window;
   var d = document;
+
+  let k = window.Kapa;
+  if (!k) {
+    let i = function () {
+      i.c(arguments);
+    };
+    i.q = [];
+    i.c = function (args) {
+      i.q.push(args);
+    };
+    window.Kapa = i;
+  }
+
   if (w.__KAPA_WIDGET_LOADED__) return;
 
   const WEBSITE_ID = "<WEBSITE_ID>";
   const PROJECT_NAME = "<PROJECT_NAME>";
   const PROJECT_COLOR = "<PROJECT_COLOR>";
   const PROJECT_LOGO = "<PROJECT_LOGO>";
+  const NATIVE_AI_EXPERIENCE = "<NATIVE_AI_EXPERIENCE>";
 
   const config = {
     // Required
@@ -97,7 +111,8 @@
     SEARCH_RESULT_BADGE_BG_COLOR: "<SEARCH_RESULT_BADGE_BG_COLOR>",
     SEARCH_RESULT_BADGE_TEXT_COLOR: "<SEARCH_RESULT_BADGE_TEXT_COLOR>",
     SEARCH_SHOW_MORE_BUTTON_TEXT_COLOR: "<SEARCH_SHOW_MORE_BUTTON_TEXT_COLOR>",
-    SEARCH_SHOW_MORE_BUTTON_HOVER_BG_COLOR: "<SEARCH_SHOW_MORE_BUTTON_HOVER_BG_COLOR>",
+    SEARCH_SHOW_MORE_BUTTON_HOVER_BG_COLOR:
+      "<SEARCH_SHOW_MORE_BUTTON_HOVER_BG_COLOR>",
   };
 
   var l = function () {
@@ -109,6 +124,10 @@
     s.setAttribute("data-project-name", PROJECT_NAME);
     s.setAttribute("data-project-color", PROJECT_COLOR);
     s.setAttribute("data-project-logo", PROJECT_LOGO);
+    s.setAttribute(
+      "data-button-hide",
+      NATIVE_AI_EXPERIENCE === "true" ? "true" : "false"
+    );
 
     for (const [key, value] of Object.entries(config)) {
       const kebabCaseKey = key.replaceAll("_", "-").toLowerCase();
@@ -121,6 +140,19 @@
     x.parentNode.insertBefore(s, x);
 
     w.__KAPA_WIDGET_LOADED__ = true;
+
+    window.GitBook.registerAssistant({
+      label: "Kapa AI",
+      icon: "sparkle",
+      ui: NATIVE_AI_EXPERIENCE === "true",
+      open: (query) => {
+        window.Kapa("open", {
+          mode: "ai",
+          query: query,
+          submit: true,
+        });
+      },
+    });
   };
   if (w.attachEvent) {
     w.attachEvent("onload", l);
