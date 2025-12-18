@@ -24,7 +24,7 @@ summary: |
 
   # Configure
 
-  You can configure the integration on single or multiple public spaces. To configure and enable your kapa.ai instance you can follow this [guide](https://docs.kapa.ai/installation-widget#g-gitbook-).
+  You can configure the integration on single or multiple public spaces. To configure and enable your kapa.ai instance you can follow this [guide](https://docs.kapa.ai/integrations/website-widget/installation/gitbook).
 script: src/index.ts
 # The following scope(s) are available only to GitBook Staff
 # See https://developer.gitbook.com/integrations/configurations#scopes
@@ -37,6 +37,11 @@ secrets: {}
 configurations:
   site:
     properties:
+      native_ai_experience:
+        type: boolean
+        title: Native AI experience
+        description: Set to "true" to enable the built-in AI experience. Default is "false".
+        default: false
       website_id:
         type: string
         title: Website ID
@@ -128,11 +133,11 @@ configurations:
       modal_x_offset:
         type: string
         title: Modal X offset
-        description: Choose the offset of the modal on the X axist. Default is not set.
+        description: Choose the offset of the modal on the X axis. Default is not set.
       modal_y_offset:
         type: string
         title: Modal Y offset
-        description: Choose the offset of the modal on the Y axist. Default is "10vh".
+        description: Choose the offset of the modal on the Y axis. Default is "10vh".
       modal_border_radius:
         type: string
         title: Modal border radius
@@ -249,6 +254,50 @@ configurations:
         type: string
         title: Modal image width
         description: Default is set to `"32"`.
+      modal_with_overlay:
+        type: string
+        title: Modal with overlay
+        description: Set to "true" to show an overlay on the page when the modal is open. Default is not set.
+      modal_overlay_bg_color:
+        type: string
+        title: Modal overlay background color
+        description: Choose the background color of the overlay. Default is not set.
+      modal_overlay_opacity:
+        type: string
+        title: Modal overlay opacity
+        description: Choose the opacity of the overlay. Default is not set.
+      modal_inner_flex_direction:
+        type: string
+        title: Modal inner flex direction
+        description: Choose the flex direction of the modal inner. Default is not set.
+      modal_inner_justify_content:
+        type: string
+        title: Modal inner justify content
+        description: Choose the justify content of the modal inner. Default is not set.
+      modal_inner_max_width:
+        type: string
+        title: Modal inner max width
+        description: Choose the max width of the modal inner. Default is not set.
+      modal_inner_position_right:
+        type: string
+        title: Modal inner position right
+        description: Choose the position of the modal inner on the right. Default is not set.
+      modal_inner_position_left:
+        type: string
+        title: Modal inner position left
+        description: Choose the position of the modal inner on the left. Default is not set.
+      modal_inner_position_bottom:
+        type: string
+        title: Modal inner position bottom
+        description: Choose the position of the modal inner on the bottom. Default is not set.
+      modal_z_index:
+        type: string
+        title: Modal z index
+        description: Choose the z index of the modal. Default is not set.
+      modal_lock_scroll:
+        type: string
+        title: Modal lock scroll
+        description: Set to "true" to lock the scroll when the modal is open. Default is not set.
       button_text:
         type: string
         title: Button text
@@ -277,59 +326,68 @@ configurations:
         type: string
         title: Global font family
         description: Default `"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif"`.
-      serch_mode_enabled:
+      search_mode_enabled:
         type: string
         title: Serach mode enabled
         description: Set to `"true"` to enable the search mode. Default is `"false"`.
-      serch_mode_default:
+      search_mode_default:
         type: string
         title: Serach mode default
         description: Set to `"true"` to set search as the default mode. Default is `"false"`.
-      serch_display_num_results:
+      search_display_num_results:
         type: string
         title: Search display num results
         description: The amount of results displayed in each "page". Default is `"5"`.
-      serch_include_source_names:
+      search_include_source_names:
         type: string
         title: Search include source names
         description: Set of source names that should be included in the search. Default is not set.
-      serch_source_group_order:
+      search_source_group_order:
         type: string
         title: Search source group order
-        description: Order of source names by wich sources should be grouped. Default is note set.
-      serch_keyboard_nav_enabled:
+        description: Order of source names by which sources should be grouped. Default is note set.
+      search_keyboard_nav_enabled:
         type: string
         title: Search keyboard nav enabled
         description: Set to `"false"` to disable keyboard navigation. Default is `"true"`.
-      serch_result_hover_bg_color:
+      search_result_hover_bg_color:
         type: string
         title: Search result hover bg color
         description: Default is `"#F1F1F1"`
-      serch_result_primary_text_color:
+      search_result_primary_text_color:
         type: string
         title: Search result text color
         description: Default is the project color.
-      serch_result_secondary_text_color:
+      search_result_secondary_text_color:
         type: string
         title: Search result sec. text color
         description: Default is `"#868e96"`.
-      serch_result_badge_bg_color:
+      search_result_badge_bg_color:
         type: string
         title: Search result badge bg color
         description: Default is not set.
-      serch_result_badge_text_color:
+      search_result_badge_text_color:
         type: string
         title: Search result badge text color
         description: Default is not set.
-      serch_show_more_button_text_color:
+      search_show_more_button_text_color:
         type: string
         title: Show more text color
         description: Default is the project color.
-      serch_show_more_button_hover_bg_color:
+      search_show_more_button_hover_bg_color:
         type: string
         title: Show more hover bg color
         description: Default is not set.
+      user_analytics_cookie_enabled:
+        type: string
+        title: Track user analytics
+        description: Enable / disable user analytics tracking using cookies. Default is "true".
+      button_animation_enabled:
+        type: string
+        title: Button animation enabled
+        description: Enables the wiggle animation of the button, used to draw user attention. Default is "true".
     required:
+      - native_ai_experience
       - website_id
       - project_name
       - project_color
