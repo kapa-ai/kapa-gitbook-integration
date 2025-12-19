@@ -386,6 +386,650 @@ configurations:
         type: string
         title: Button animation enabled
         description: Enables the wiggle animation of the button, used to draw user attention. Default is "true".
+      search_input_show_icon:
+        type: string
+        title: Search input show icon
+        description: Set to `"false"` to hide the search icon. Default is `"true"`.
+      search_result_primary_title_font_size:
+        type: string
+        title: Search result primary title font size
+        description: Font size for the primary title in search results.
+      search_result_secondary_title_font_size:
+        type: string
+        title: Search result secondary title font size
+        description: Font size for the secondary title in search results.
+      search_ask_ai_cta_text_color:
+        type: string
+        title: Search Ask AI CTA text color
+        description: Text color for the "Ask AI" CTA button in search results. Default is the project color.
+      search_ask_ai_cta_hover_text_color:
+        type: string
+        title: Search Ask AI CTA hover text color
+        description: Text color when hovering over the "Ask AI" CTA button. Default is the project color.
+      search_ask_ai_cta_bg_color:
+        type: string
+        title: Search Ask AI CTA background color
+        description: Background color for the "Ask AI" CTA button.
+      search_ask_ai_cta_hover_bg_color:
+        type: string
+        title: Search Ask AI CTA hover background color
+        description: Background color when hovering over the "Ask AI" CTA button.
+      search_ask_ai_cta_border:
+        type: string
+        title: Search Ask AI CTA border
+        description: Border style for the "Ask AI" CTA button.
+      search_ask_ai_cta_text_font_size:
+        type: string
+        title: Search Ask AI CTA text font size
+        description: Font size for the "Ask AI" CTA button text.
+      search_source_ids_include:
+        type: string
+        title: Search source IDs include
+        description: Comma-separated list of source IDs to include in search results.
+      search_source_ids_order:
+        type: string
+        title: Search source IDs order
+        description: Comma-separated list of source IDs defining the order in search results.
+      search_result_link_target:
+        type: string
+        title: Search result link target
+        description: Link target for search results. Default is `"_blank"`.
+      search_show_ask_ai_cta:
+        type: string
+        title: Search show Ask AI CTA
+        description: Set to `"false"` to hide the "Ask AI" CTA in search. Default is `"true"`.
+      language:
+        type: string
+        title: Language
+        description: UI language code. Default is `"en"`.
+      scale_factor:
+        type: string
+        title: Scale factor
+        description: Global scale factor for the widget. Default is `"1"`.
+      font_size_xs:
+        type: string
+        title: Font size XS
+        description: Extra small font size. Default is `"0.75rem"`.
+      font_size_sm:
+        type: string
+        title: Font size SM
+        description: Small font size. Default is `"0.875rem"`.
+      font_size_md:
+        type: string
+        title: Font size MD
+        description: Medium font size. Default is `"1rem"`.
+      font_size_lg:
+        type: string
+        title: Font size LG
+        description: Large font size. Default is `"1.125rem"`.
+      font_size_xl:
+        type: string
+        title: Font size XL
+        description: Extra large font size. Default is `"1.25rem"`.
+      hyperlink_color:
+        type: string
+        title: Hyperlink color
+        description: Color for hyperlinks in the widget content.
+      question_text_color:
+        type: string
+        title: Question text color
+        description: Color for user question text.
+      answer_text_color:
+        type: string
+        title: Answer text color
+        description: Color for AI answer text.
+      button_hover_bg_color:
+        type: string
+        title: Button hover background color
+        description: Background color when hovering over the floating button.
+      button_image:
+        type: string
+        title: Button image
+        description: Image URL for the button. Default is the project logo.
+      button_image_height:
+        type: string
+        title: Button image height
+        description: Height of the button image in pixels. Default is `"32"`.
+      button_image_width:
+        type: string
+        title: Button image width
+        description: Width of the button image in pixels. Default is `"32"`.
+      button_z_index:
+        type: string
+        title: Button z-index
+        description: Z-index for the button. Default is `"199"`.
+      button_hover_animation_enabled:
+        type: string
+        title: Button hover animation enabled
+        description: Enable hover animation for the button. Default is `"true"`.
+      modal_image:
+        type: string
+        title: Modal image
+        description: Main image to display in the modal header. Default is the project logo.
+      modal_close_button_hide:
+        type: string
+        title: Modal close button hide
+        description: Set to `"true"` to hide the close button. Default is `"false"`.
+      modal_disclaimer_bg_color:
+        type: string
+        title: Modal disclaimer background color
+        description: Background color for the disclaimer section. Default is `"#F8F9FA"`.
+      modal_disclaimer_text_color:
+        type: string
+        title: Modal disclaimer text color
+        description: Text color for the disclaimer. Default is `"gray"`.
+      modal_disclaimer_font_size:
+        type: string
+        title: Modal disclaimer font size
+        description: Font size for the disclaimer text.
+      modal_full_screen:
+        type: string
+        title: Modal full screen
+        description: Set to `"true"` to display modal in full screen mode. Default is `"false"`.
+      modal_full_screen_on_mobile:
+        type: string
+        title: Modal full screen on mobile
+        description: Set to `"false"` to disable full screen on mobile. Default is `"true"`.
+      modal_header_logo_hide_on_mobile:
+        type: string
+        title: Modal header logo hide on mobile
+        description: Set to `"true"` to hide the logo on mobile. Default is `"false"`.
+      modal_example_questions_title:
+        type: string
+        title: Modal example questions title
+        description: Title for the example questions section. Default is `"EXAMPLE QUESTIONS"`.
+      modal_example_questions_col_span:
+        type: string
+        title: Modal example questions column span
+        description: Column span for example questions layout. Default is `"6"`.
+      modal_footer:
+        type: string
+        title: Modal footer
+        description: Custom footer content for the modal.
+      modal_override_open_class_search:
+        type: string
+        title: Modal override open class (search mode)
+        description: CSS class name to trigger modal opening in search mode.
+      modal_override_open_class_ask_ai:
+        type: string
+        title: Modal override open class (Ask AI mode)
+        description: CSS class name to trigger modal opening in Ask AI mode.
+      modal_override_open_id:
+        type: string
+        title: Modal override open ID
+        description: Element ID to trigger modal opening.
+      modal_override_open_id_search:
+        type: string
+        title: Modal override open ID (search mode)
+        description: Element ID to trigger modal opening in search mode.
+      modal_override_open_id_ask_ai:
+        type: string
+        title: Modal override open ID (Ask AI mode)
+        description: Element ID to trigger modal opening in Ask AI mode.
+      modal_override_open_selector:
+        type: string
+        title: Modal override open selector
+        description: CSS selector to trigger modal opening.
+      modal_override_open_selector_search:
+        type: string
+        title: Modal override open selector (search mode)
+        description: CSS selector to trigger modal opening in search mode.
+      modal_override_open_selector_ask_ai:
+        type: string
+        title: Modal override open selector (Ask AI mode)
+        description: CSS selector to trigger modal opening in Ask AI mode.
+      modal_open_on_command_k:
+        type: string
+        title: Modal open on Cmd+K
+        description: Set to `"true"` to enable opening modal with Cmd+K / Ctrl+K. Default is `"false"`.
+      modal_command_k_search_mode_default:
+        type: string
+        title: Modal Cmd+K search mode default
+        description: Set to `"true"` to default to search mode when opening with Cmd+K. Default is `"false"`.
+      modal_image_ask_ai:
+        type: string
+        title: Modal image (Ask AI mode)
+        description: Image to display when in Ask AI mode. Default is the modal image.
+      modal_image_search:
+        type: string
+        title: Modal image (search mode)
+        description: Image to display when in search mode. Default is the modal image.
+      modal_title_search:
+        type: string
+        title: Modal title (search mode)
+        description: Modal title when in search mode. Default is the modal title.
+      modal_title_ask_ai:
+        type: string
+        title: Modal title (Ask AI mode)
+        description: Modal title when in Ask AI mode. Default is the modal title.
+      query_input_font_size:
+        type: string
+        title: Query input font size
+        description: Font size for the query input field.
+      query_input_text_color:
+        type: string
+        title: Query input text color
+        description: Text color for the query input. Default is `"#000"`.
+      query_input_placeholder_text_color:
+        type: string
+        title: Query input placeholder text color
+        description: Placeholder text color for the query input. Default is `"#adb5bd"`.
+      query_input_border_color:
+        type: string
+        title: Query input border color
+        description: Border color for the query input field.
+      query_input_focus_border_color:
+        type: string
+        title: Query input focus border color
+        description: Border color when the query input is focused.
+      submit_query_button_bg_color:
+        type: string
+        title: Submit query button background color
+        description: Background color for the submit button.
+      conversation_buttons_icons_only:
+        type: string
+        title: Conversation buttons icons only
+        description: Set to `"true"` to show only icons on conversation buttons. Default is `"false"`.
+      answer_copy_button_height:
+        type: string
+        title: Answer copy button height
+        description: Height of the copy button.
+      answer_copy_button_width:
+        type: string
+        title: Answer copy button width
+        description: Width of the copy button.
+      answer_copy_button_padding_x:
+        type: string
+        title: Answer copy button padding X
+        description: Horizontal padding for the copy button.
+      answer_copy_button_padding_y:
+        type: string
+        title: Answer copy button padding Y
+        description: Vertical padding for the copy button.
+      answer_copy_button_border:
+        type: string
+        title: Answer copy button border
+        description: Border style for the copy button.
+      answer_copy_button_border_radius:
+        type: string
+        title: Answer copy button border radius
+        description: Border radius for the copy button.
+      answer_copy_button_bg_color:
+        type: string
+        title: Answer copy button background color
+        description: Background color for the copy button.
+      answer_copy_button_hover_bg_color:
+        type: string
+        title: Answer copy button hover background color
+        description: Background color when hovering over the copy button.
+      answer_copy_button_text_color:
+        type: string
+        title: Answer copy button text color
+        description: Text color for the copy button.
+      answer_copy_button_font_size:
+        type: string
+        title: Answer copy button font size
+        description: Font size for the copy button.
+      answer_copy_button_icon_size:
+        type: string
+        title: Answer copy button icon size
+        description: Icon size for the copy button.
+      answer_copy_button_box_shadow:
+        type: string
+        title: Answer copy button box shadow
+        description: Box shadow for the copy button.
+      thread_clear_button_height:
+        type: string
+        title: Thread clear button height
+        description: Height of the thread clear button.
+      thread_clear_button_width:
+        type: string
+        title: Thread clear button width
+        description: Width of the thread clear button.
+      thread_clear_button_padding_x:
+        type: string
+        title: Thread clear button padding X
+        description: Horizontal padding for the thread clear button.
+      thread_clear_button_padding_y:
+        type: string
+        title: Thread clear button padding Y
+        description: Vertical padding for the thread clear button.
+      thread_clear_button_border:
+        type: string
+        title: Thread clear button border
+        description: Border style for the thread clear button.
+      thread_clear_button_border_radius:
+        type: string
+        title: Thread clear button border radius
+        description: Border radius for the thread clear button.
+      thread_clear_button_bg_color:
+        type: string
+        title: Thread clear button background color
+        description: Background color for the thread clear button.
+      thread_clear_button_hover_bg_color:
+        type: string
+        title: Thread clear button hover background color
+        description: Background color when hovering over the thread clear button.
+      thread_clear_button_text_color:
+        type: string
+        title: Thread clear button text color
+        description: Text color for the thread clear button.
+      thread_clear_button_font_size:
+        type: string
+        title: Thread clear button font size
+        description: Font size for the thread clear button.
+      thread_clear_button_icon_size:
+        type: string
+        title: Thread clear button icon size
+        description: Icon size for the thread clear button.
+      thread_clear_button_box_shadow:
+        type: string
+        title: Thread clear button box shadow
+        description: Box shadow for the thread clear button.
+      answer_feedback_button_height:
+        type: string
+        title: Answer feedback button height
+        description: Height of the feedback button.
+      answer_feedback_button_width:
+        type: string
+        title: Answer feedback button width
+        description: Width of the feedback button.
+      answer_feedback_button_padding_x:
+        type: string
+        title: Answer feedback button padding X
+        description: Horizontal padding for the feedback button.
+      answer_feedback_button_padding_y:
+        type: string
+        title: Answer feedback button padding Y
+        description: Vertical padding for the feedback button.
+      answer_feedback_button_border:
+        type: string
+        title: Answer feedback button border
+        description: Border style for the feedback button.
+      answer_feedback_button_active_border:
+        type: string
+        title: Answer feedback button active border
+        description: Border style when the feedback button is active.
+      answer_feedback_button_border_radius:
+        type: string
+        title: Answer feedback button border radius
+        description: Border radius for the feedback button.
+      answer_feedback_button_bg_color:
+        type: string
+        title: Answer feedback button background color
+        description: Background color for the feedback button.
+      answer_feedback_button_active_bg_color:
+        type: string
+        title: Answer feedback button active background color
+        description: Background color when the feedback button is active.
+      answer_feedback_button_active_hover_bg_color:
+        type: string
+        title: Answer feedback button active hover background color
+        description: Background color when hovering over an active feedback button. Default is `"transparent"`.
+      answer_feedback_button_hover_bg_color:
+        type: string
+        title: Answer feedback button hover background color
+        description: Background color when hovering over the feedback button.
+      answer_feedback_button_text_color:
+        type: string
+        title: Answer feedback button text color
+        description: Text color for the feedback button.
+      answer_feedback_button_active_text_color:
+        type: string
+        title: Answer feedback button active text color
+        description: Text color when the feedback button is active.
+      answer_feedback_button_font_size:
+        type: string
+        title: Answer feedback button font size
+        description: Font size for the feedback button.
+      answer_feedback_button_icon_size:
+        type: string
+        title: Answer feedback button icon size
+        description: Icon size for the feedback button.
+      answer_feedback_button_box_shadow:
+        type: string
+        title: Answer feedback button box shadow
+        description: Box shadow for the feedback button.
+      cta_button_height:
+        type: string
+        title: CTA button height
+        description: Height of the CTA button.
+      cta_button_width:
+        type: string
+        title: CTA button width
+        description: Width of the CTA button.
+      cta_button_padding_x:
+        type: string
+        title: CTA button padding X
+        description: Horizontal padding for the CTA button.
+      cta_button_padding_y:
+        type: string
+        title: CTA button padding Y
+        description: Vertical padding for the CTA button.
+      cta_button_border:
+        type: string
+        title: CTA button border
+        description: Border style for the CTA button.
+      cta_button_border_radius:
+        type: string
+        title: CTA button border radius
+        description: Border radius for the CTA button.
+      cta_button_bg_color:
+        type: string
+        title: CTA button background color
+        description: Background color for the CTA button.
+      cta_button_hover_bg_color:
+        type: string
+        title: CTA button hover background color
+        description: Background color when hovering over the CTA button.
+      cta_button_text_color:
+        type: string
+        title: CTA button text color
+        description: Text color for the CTA button.
+      cta_button_font_size:
+        type: string
+        title: CTA button font size
+        description: Font size for the CTA button.
+      cta_button_icon_size:
+        type: string
+        title: CTA button icon size
+        description: Icon size for the CTA button.
+      cta_button_box_shadow:
+        type: string
+        title: CTA button box shadow
+        description: Box shadow for the CTA button.
+      example_question_button_height:
+        type: string
+        title: Example question button height
+        description: Height of example question buttons.
+      example_question_button_width:
+        type: string
+        title: Example question button width
+        description: Width of example question buttons.
+      example_question_button_padding_x:
+        type: string
+        title: Example question button padding X
+        description: Horizontal padding for example question buttons.
+      example_question_button_padding_y:
+        type: string
+        title: Example question button padding Y
+        description: Vertical padding for example question buttons.
+      example_question_button_border:
+        type: string
+        title: Example question button border
+        description: Border style for example question buttons.
+      example_question_button_border_radius:
+        type: string
+        title: Example question button border radius
+        description: Border radius for example question buttons.
+      example_question_button_bg_color:
+        type: string
+        title: Example question button background color
+        description: Background color for example question buttons.
+      example_question_button_hover_bg_color:
+        type: string
+        title: Example question button hover background color
+        description: Background color when hovering over example question buttons.
+      example_question_button_text_color:
+        type: string
+        title: Example question button text color
+        description: Text color for example question buttons.
+      example_question_button_font_size:
+        type: string
+        title: Example question button font size
+        description: Font size for example question buttons.
+      example_question_button_box_shadow:
+        type: string
+        title: Example question button box shadow
+        description: Box shadow for example question buttons.
+      deep_thinking_button_bg_color:
+        type: string
+        title: Deep thinking button background color
+        description: Background color for the deep thinking button. Default is `"transparent"`.
+      deep_thinking_button_active_bg_color:
+        type: string
+        title: Deep thinking button active background color
+        description: Background color when the deep thinking button is active.
+      deep_thinking_button_hover_bg_color:
+        type: string
+        title: Deep thinking button hover background color
+        description: Background color when hovering over the deep thinking button.
+      deep_thinking_button_active_hover_bg_color:
+        type: string
+        title: Deep thinking button active hover background color
+        description: Background color when hovering over an active deep thinking button. Default is `"#f8f9fa"`.
+      deep_thinking_button_active_hover_text_color:
+        type: string
+        title: Deep thinking button active hover text color
+        description: Text color when hovering over an active deep thinking button.
+      deep_thinking_button_text_color:
+        type: string
+        title: Deep thinking button text color
+        description: Text color for the deep thinking button.
+      deep_thinking_button_active_text_color:
+        type: string
+        title: Deep thinking button active text color
+        description: Text color when the deep thinking button is active.
+      deep_thinking_button_font_size:
+        type: string
+        title: Deep thinking button font size
+        description: Font size for the deep thinking button.
+      deep_thinking_button_icon_size:
+        type: string
+        title: Deep thinking button icon size
+        description: Icon size for the deep thinking button.
+      source_link_primary_heading_text_color:
+        type: string
+        title: Source link primary heading text color
+        description: Text color for the primary heading in source links.
+      source_link_secondary_heading_text_color:
+        type: string
+        title: Source link secondary heading text color
+        description: Text color for the secondary heading in source links.
+      source_link_border:
+        type: string
+        title: Source link border
+        description: Border style for source links.
+      source_link_bg_color:
+        type: string
+        title: Source link background color
+        description: Background color for source links.
+      source_link_hover_bg_color:
+        type: string
+        title: Source link hover background color
+        description: Background color when hovering over source links.
+      switch_label_padding_x:
+        type: string
+        title: Switch label padding X
+        description: Horizontal padding for switch labels.
+      switch_label_padding_y:
+        type: string
+        title: Switch label padding Y
+        description: Vertical padding for switch labels.
+      switch_label_font_size:
+        type: string
+        title: Switch label font size
+        description: Font size for switch labels.
+      switch_label_font_weight:
+        type: string
+        title: Switch label font weight
+        description: Font weight for switch labels.
+      source_group_ids_include:
+        type: string
+        title: Source group IDs include
+        description: Comma-separated list of source group IDs to include.
+      consent_required:
+        type: string
+        title: Consent required
+        description: Set to `"true"` to require user consent before tracking. Default is `"false"`.
+      consent_screen_title:
+        type: string
+        title: Consent screen title
+        description: Title for the consent screen.
+      consent_screen_disclaimer:
+        type: string
+        title: Consent screen disclaimer
+        description: Disclaimer text for the consent screen.
+      consent_screen_accept_button_text:
+        type: string
+        title: Consent screen accept button text
+        description: Text for the accept button on the consent screen.
+      consent_screen_reject_button_text:
+        type: string
+        title: Consent screen reject button text
+        description: Text for the reject button on the consent screen.
+      answer_cta_button_enabled:
+        type: string
+        title: Answer CTA button enabled
+        description: Set to `"true"` to enable the CTA button in answers. Default is `"false"`.
+      answer_cta_button_text:
+        type: string
+        title: Answer CTA button text
+        description: Text for the CTA button. Default is `"Talk to an Expert"`.
+      answer_cta_button_link:
+        type: string
+        title: Answer CTA button link
+        description: URL for the CTA button. Default is `"#"`.
+      footer_tos_privacy_links:
+        type: string
+        title: Footer ToS & Privacy links
+        description: Links for Terms of Service and Privacy Policy in the footer.
+      kapa_branding_hide:
+        type: string
+        title: Kapa branding hide
+        description: Set to `"true"` to hide Kapa branding. Default is `"false"`.
+      kapa_branding_text:
+        type: string
+        title: Kapa branding text
+        description: Custom text for Kapa branding.
+      uncertain_answer_callout:
+        type: string
+        title: Uncertain answer callout
+        description: Custom callout text for uncertain answers.
+      user_satisfaction_feedback_enabled:
+        type: string
+        title: User satisfaction feedback enabled
+        description: Set to `"false"` to disable user feedback. Default is `"true"`.
+      bot_protection_mechanism:
+        type: string
+        title: Bot protection mechanism
+        description: Bot protection mechanism to use (`"recaptcha"` or `"hcaptcha"`). Default is `"recaptcha"`.
+      user_analytics_fingerprint_enabled:
+        type: string
+        title: User analytics fingerprint enabled
+        description: Set to `"true"` to enable fingerprint-based user tracking. Default is `"false"`.
+      mcp_enabled:
+        type: string
+        title: MCP enabled
+        description: Set to `"true"` to enable Model Context Protocol integration. Default is `"false"`.
+      mcp_server_url:
+        type: string
+        title: MCP server URL
+        description: URL for the MCP server.
+      mcp_button_text:
+        type: string
+        title: MCP button text
+        description: Text for the MCP button. Default is `"Use MCP"`.
     required:
       - native_ai_experience
       - website_id
