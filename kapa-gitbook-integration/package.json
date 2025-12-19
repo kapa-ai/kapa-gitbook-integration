@@ -7,12 +7,12 @@
     "publish": "gitbook publish ."
   },
   "dependencies": {
-    "@gitbook/runtime": "*"
+    "@gitbook/runtime": "^0.23.1"
   },
   "devDependencies": {
-    "@gitbook/cli": "*",
-    "@gitbook/eslint-config": "*",
-    "@gitbook/tsconfig": "*",
+    "@gitbook/cli": "^0.26.3",
+    "@gitbook/eslint-config": "^0.1.0",
+    "@gitbook/tsconfig": "^0.1.0",
     "esbuild": "^0.25.0"
   },
   "overrides": {
