@@ -578,10 +578,6 @@ configurations:
         type: string
         title: Modal override open selector (Ask AI mode)
         description: CSS selector to trigger modal opening in Ask AI mode.
-      modal_open_on_command_k:
-        type: string
-        title: Modal open on Cmd+K
-        description: Set to `"true"` to enable opening modal with Cmd+K / Ctrl+K. Default is `"false"`.
       modal_command_k_search_mode_default:
         type: string
         title: Modal Cmd+K search mode default
@@ -764,7 +760,7 @@ configurations:
         description: Background color when the feedback button is active.
       answer_feedback_button_active_hover_bg_color:
         type: string
-        title: Answer feedback button active hover background color
+        title: Answer feedback button active hover bg color
         description: Background color when hovering over an active feedback button. Default is `"transparent"`.
       answer_feedback_button_hover_bg_color:
         type: string

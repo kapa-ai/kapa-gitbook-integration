@@ -10,7 +10,7 @@
     "@gitbook/runtime": "^0.23.1"
   },
   "devDependencies": {
-    "@gitbook/cli": "^0.26.3",
+    "@gitbook/cli": "^0.27.0",
     "@gitbook/eslint-config": "^0.1.0",
     "@gitbook/tsconfig": "^0.1.0",
     "esbuild": "^0.25.0"
