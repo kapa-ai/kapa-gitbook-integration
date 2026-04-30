@@ -18,6 +18,9 @@ type KapaRuntimeContext = RuntimeContext<
       project_color?: string;
       project_logo?: string;
 
+      // Widget configuration (JSON)
+      config_json?: string;
+
       // General style
       font_family?: string;
 
@@ -331,6 +334,9 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
   const project_logo =
     environment.siteInstallation?.configuration?.project_logo ??
     environment.spaceInstallation?.configuration?.project_logo;
+  const config_json =
+    environment.siteInstallation?.configuration?.config_json ??
+    environment.spaceInstallation?.configuration?.config_json;
 
   const config = {
     button_position_top:
@@ -1234,6 +1240,16 @@ export const handleFetchEvent: FetchPublishScriptEventCallback = async (
         "undefined"
       );
     }
+  }
+
+  // Handle config_json separately — it contains quotes that must be escaped
+  // for safe embedding inside a JS string literal in the script template.
+  // config_json values take precedence over individual fields above.
+  if (config_json) {
+    const escaped = JSON.stringify(config_json).slice(1, -1);
+    parsedScript = parsedScript.replace("<CONFIG_JSON>", escaped);
+  } else {
+    parsedScript = parsedScript.replace("<CONFIG_JSON>", "undefined");
   }
 
   return new Response(parsedScript, {

@@ -21,6 +21,7 @@
   const PROJECT_COLOR = "<PROJECT_COLOR>";
   const PROJECT_LOGO = "<PROJECT_LOGO>";
   const NATIVE_AI_EXPERIENCE = "<NATIVE_AI_EXPERIENCE>";
+  const CONFIG_JSON = "<CONFIG_JSON>";
 
   const config = {
     // Required
@@ -357,6 +358,23 @@
       const kebabCaseKey = key.replaceAll("_", "-").toLowerCase();
       if (value !== `<${key}>` && value !== "undefined") {
         s.setAttribute(`data-${kebabCaseKey}`, value);
+      }
+    }
+
+    // Apply config_json overrides (takes precedence over individual fields above)
+    if (CONFIG_JSON !== "undefined") {
+      try {
+        var configOverrides = JSON.parse(CONFIG_JSON);
+        for (var tk in configOverrides) {
+          if (configOverrides.hasOwnProperty(tk)) {
+            var tv = configOverrides[tk];
+            if (tv !== undefined && tv !== null && tv !== "") {
+              s.setAttribute("data-" + tk, String(tv));
+            }
+          }
+        }
+      } catch (e) {
+        console.warn("kapa: failed to parse config_json:", e);
       }
     }
 
