@@ -58,974 +58,980 @@ configurations:
         type: string
         title: Project logo
         description: Provide a link to the logo you want to use (a square format is recommended).
+      config_json:
+        type: string
+        title: Widget Configuration (JSON)
+        description: >
+          JSON object of widget data attributes in kebab-case without the "data-" prefix.
+          See https://docs.kapa.ai for available attributes. Takes precedence over individual fields.
       button_position_top:
         type: string
-        title: Button position (top)
-        description: Choose the position of the button on the page (top). Default is not set.
+        title: "[Deprecated] Button position (top)"
+        description: Deprecated - use config_json instead. Choose the position of the button on the page (top). Default is not set.
       button_position_bottom:
         type: string
-        title: Button position (bottom)
-        description: Choose the position of the button on the page (bottom). Default is 20px.
+        title: "[Deprecated] Button position (bottom)"
+        description: Deprecated - use config_json instead. Choose the position of the button on the page (bottom). Default is 20px.
       button_position_left:
         type: string
-        title: Button position (left)
-        description: Choose the position of the button on the page (left). Default is not set.
+        title: "[Deprecated] Button position (left)"
+        description: Deprecated - use config_json instead. Choose the position of the button on the page (left). Default is not set.
       button_position_right:
         type: string
-        title: Button position (right)
-        description: Choose the position of the button on the page (right). Default is 20px.
+        title: "[Deprecated] Button position (right)"
+        description: Deprecated - use config_json instead. Choose the position of the button on the page (right). Default is 20px.
       button_height:
         type: string
-        title: Button height
-        description: Choose the height of the button. Default is "5rem".
+        title: "[Deprecated] Button height"
+        description: "Deprecated: use config_json instead. Choose the height of the button. Default is \"5rem\"."
       button_width:
         type: string
-        title: Button width
-        description: Choose the width of the button. Default is "4.5rem".
+        title: "[Deprecated] Button width"
+        description: "Deprecated: use config_json instead. Choose the width of the button. Default is \"4.5rem\"."
       button_padding:
         type: string
-        title: Button padding
-        description: Choose the padding of the button. Default is "0".
+        title: "[Deprecated] Button padding"
+        description: "Deprecated: use config_json instead. Choose the padding of the button. Default is \"0\"."
       button_bg_color:
         type: string
-        title: Button background color
-        description: Choose the background color of the button. Default is not set.
+        title: "[Deprecated] Button background color"
+        description: Deprecated - use config_json instead. Choose the background color of the button. Default is not set.
       button_border_radius:
         type: string
-        title: Button border radius
-        description: Choose the border radius of the button. Default is not set.
+        title: "[Deprecated] Button border radius"
+        description: Deprecated - use config_json instead. Choose the border radius of the button. Default is not set.
       button_border:
         type: string
-        title: Button border
-        description: Choose the border of the button. Default is not set.
+        title: "[Deprecated] Button border"
+        description: Deprecated - use config_json instead. Choose the border of the button. Default is not set.
       button_box_shadow:
         type: string
-        title: Button box shadow
-        description: Choose the box shadow of the button. Default is "0 0 10px rgba(0, 0, 0, 0.2)".
+        title: "[Deprecated] Button box shadow"
+        description: "Deprecated: use config_json instead. Choose the box shadow of the button. Default is \"0 0 10px rgba(0, 0, 0, 0.2)\"."
       button_text_font_size:
         type: string
-        title: Button text font size
-        description: Choose the font size of the text in the button. Default is not set.
+        title: "[Deprecated] Button text font size"
+        description: Deprecated - use config_json instead. Choose the font size of the text in the button. Default is not set.
       button_text_font_weight:
         type: string
-        title: Button text font weight
-        description: Choose the font weight of the text in the button. Default is not set.
+        title: "[Deprecated] Button text font weight"
+        description: Deprecated - use config_json instead. Choose the font weight of the text in the button. Default is not set.
       button_text_font_family:
         type: string
-        title: Button text font family
-        description: Choose the font family of the text in the button. Default is not set.
+        title: "[Deprecated] Button text font family"
+        description: Deprecated - use config_json instead. Choose the font family of the text in the button. Default is not set.
       button_text_color:
         type: string
-        title: Button text color
-        description: Choose the color of the text in the button. Default is not set.
+        title: "[Deprecated] Button text color"
+        description: Deprecated - use config_json instead. Choose the color of the text in the button. Default is not set.
       button_text_shadow:
         type: string
-        title: Button text shadow
-        description: Choose the shadow of the text in the button. Default is "1px 1px 2px rgba(0, 0, 0, 0.2)".
+        title: "[Deprecated] Button text shadow"
+        description: "Deprecated: use config_json instead. Choose the shadow of the text in the button. Default is \"1px 1px 2px rgba(0, 0, 0, 0.2)\"."
       button_hide:
         type: string
-        title: Hide button
-        description: Hide the button on the page. Default is not set.
+        title: "[Deprecated] Hide button"
+        description: Deprecated - use config_json instead. Hide the button on the page. Default is not set.
       modal_size:
         type: string
-        title: Modal size
-        description: Choose the horizontal size of the modal. Default is "640px".
+        title: "[Deprecated] Modal size"
+        description: "Deprecated: use config_json instead. Choose the horizontal size of the modal. Default is \"640px\"."
       modal_x_offset:
         type: string
-        title: Modal X offset
-        description: Choose the offset of the modal on the X axis. Default is not set.
+        title: "[Deprecated] Modal X offset"
+        description: Deprecated - use config_json instead. Choose the offset of the modal on the X axis. Default is not set.
       modal_y_offset:
         type: string
-        title: Modal Y offset
-        description: Choose the offset of the modal on the Y axis. Default is "10vh".
+        title: "[Deprecated] Modal Y offset"
+        description: "Deprecated: use config_json instead. Choose the offset of the modal on the Y axis. Default is \"10vh\"."
       modal_border_radius:
         type: string
-        title: Modal border radius
-        description: Choose the border radius of the modal. Default is "0.5rem".
+        title: "[Deprecated] Modal border radius"
+        description: "Deprecated: use config_json instead. Choose the border radius of the modal. Default is \"0.5rem\"."
       modal_header_min_height:
         type: string
-        title: Modal header min height
-        description: Choose the min height of the modal header. Default is set to "48px".
+        title: "[Deprecated] Modal header min height"
+        description: "Deprecated: use config_json instead. Choose the min height of the modal header. Default is set to \"48px\"."
       modal_header_padding:
         type: string
-        title: Modal header padding
-        description: Choose the padding of the modal header. Default is set to "20px".
+        title: "[Deprecated] Modal header padding"
+        description: "Deprecated: use config_json instead. Choose the padding of the modal header. Default is set to \"20px\"."
       modal_header_padding_top:
         type: string
-        title: Modal header top padding
-        description: Choose the top-side padding of the modal header. Default is not set.
+        title: "[Deprecated] Modal header top padding"
+        description: Deprecated - use config_json instead. Choose the top-side padding of the modal header. Default is not set.
       modal_header_padding_right:
         type: string
-        title: Modal header right padding
-        description: Choose the right-side padding of the modal header. Default is not set.
+        title: "[Deprecated] Modal header right padding"
+        description: Deprecated - use config_json instead. Choose the right-side padding of the modal header. Default is not set.
       modal_header_padding_bottom:
         type: string
-        title: Modal header bottom padding
-        description: Choose the bottom-side padding of the modal header. Default is not set.
+        title: "[Deprecated] Modal header bottom padding"
+        description: Deprecated - use config_json instead. Choose the bottom-side padding of the modal header. Default is not set.
       modal_header_padding_left:
         type: string
-        title: Modal header padding left
-        description: Choose the left-side padding of the modal header. Default is not set.
+        title: "[Deprecated] Modal header padding left"
+        description: Deprecated - use config_json instead. Choose the left-side padding of the modal header. Default is not set.
       modal_header_bg_color:
         type: string
-        title: Modal header background color
-        description: Choose the background color of the modal header. Default is "#F1F3F5".
+        title: "[Deprecated] Modal header background color"
+        description: "Deprecated: use config_json instead. Choose the background color of the modal header. Default is \"#F1F3F5\"."
       modal_header_border_bottom:
         type: string
-        title: Modal header border bottom
-        description: Choose the bottom border of the modal header. Default is "1px solid #CED4DA".
+        title: "[Deprecated] Modal header border bottom"
+        description: "Deprecated: use config_json instead. Choose the bottom border of the modal header. Default is \"1px solid #CED4DA\"."
       modal_body_bg_color:
         type: string
-        title: Modal body background color
-        description: Choose the background color of the modal header. Default is not set.
+        title: "[Deprecated] Modal body background color"
+        description: Deprecated - use config_json instead. Choose the background color of the modal body. Default is not set.
       modal_body_padding_top:
         type: string
-        title: Modal body top padding
-        description: Choose the top-side padding of the modal body. Default is not set.
+        title: "[Deprecated] Modal body top padding"
+        description: Deprecated - use config_json instead. Choose the top-side padding of the modal body. Default is not set.
       modal_body_padding_right:
         type: string
-        title: Modal body right padding
-        description: Choose the right-side padding of the modal body. Default is not set.
+        title: "[Deprecated] Modal body right padding"
+        description: Deprecated - use config_json instead. Choose the right-side padding of the modal body. Default is not set.
       modal_body_padding_bottom:
         type: string
-        title: Modal body bottom padding
-        description: Choose the bottom-side padding of the modal body. Default is not set.
+        title: "[Deprecated] Modal body bottom padding"
+        description: Deprecated - use config_json instead. Choose the bottom-side padding of the modal body. Default is not set.
       modal_body_padding_left:
         type: string
-        title: Modal body padding left
-        description: Choose the left-side padding of the modal body. Default is not set.
+        title: "[Deprecated] Modal body padding left"
+        description: Deprecated - use config_json instead. Choose the left-side padding of the modal body. Default is not set.
       modal_title_font_family:
         type: string
-        title: Modal title font family
-        description: Choose the font family of the modal title.
+        title: "[Deprecated] Modal title font family"
+        description: Deprecated - use config_json instead. Choose the font family of the modal title.
       modal_title_font_size:
         type: string
-        title: Modal title font size
-        description: Choose the font size of the modal title.
+        title: "[Deprecated] Modal title font size"
+        description: Deprecated - use config_json instead. Choose the font size of the modal title.
       modal_title_font_weight:
         type: string
-        title: Modal title font weight
-        description: Choose the font weight of the modal title.
+        title: "[Deprecated] Modal title font weight"
+        description: Deprecated - use config_json instead. Choose the font weight of the modal title.
       modal_title_color:
         type: string
-        title: Modal title color
-        description: Choose the color of the modal title.
+        title: "[Deprecated] Modal title color"
+        description: Deprecated - use config_json instead. Choose the color of the modal title.
       modal_override_open_class:
         type: string
-        title: Modal override open class
-        description: Set to a class name to override the modal open behavior. Default is not set.
+        title: "[Deprecated] Modal override open class"
+        description: Deprecated - use config_json instead. Set to a class name to override the modal open behavior. Default is not set.
       modal_open_on_command_k:
         type: string
-        title: Open modal on CMD+K
-        description: Set to `"true"` to enable opening the modal with `Cmd+K`. Default is set to `"false"`.
+        title: "[Deprecated] Open modal on CMD+K"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to enable opening the modal with `Cmd+K`. Default is set to `\"false\"`."
       modal_open_by_default:
         type: string
-        title: Modal open by default
-        description: Set to "true" to open the modal by default when loading it on a page. Default is not set.
+        title: "[Deprecated] Modal open by default"
+        description: Deprecated - use config_json instead. Set to "true" to open the modal by default when loading it on a page. Default is not set.
       modal_title:
         type: string
-        title: Modal title
-        description: Set the title for the modal. Default is "[project name] Docs AI".
+        title: "[Deprecated] Modal title"
+        description: "Deprecated - use config_json instead. Set the title for the modal. Default is \"[project name] Docs AI\"."
       modal_disclaimer:
         type: string
-        title: Modal disclaimer
-        description: Set a disclaimer to appear at the top of the modal. Default is not set.
+        title: "[Deprecated] Modal disclaimer"
+        description: Deprecated - use config_json instead. Set a disclaimer to appear at the top of the modal. Default is not set.
       modal_ask_ai_input_placeholder:
         type: string
-        title: Ask AI mode input placeholder
-        description: Default is `"Ask me a question about [project name]..."`.
+        title: "[Deprecated] Ask AI mode input placeholder"
+        description: "Deprecated - use config_json instead. Default is `\"Ask me a question about [project name]...\"`."
       modal_search_input_placeholder:
         type: string
-        title: Search mode input placeholder
-        description: Default is `"Search sources..."`.
+        title: "[Deprecated] Search mode input placeholder"
+        description: "Deprecated - use config_json instead. Default is `\"Search sources...\"`."
       modal_example_questions:
         type: string
-        title: Modal example questions
-        description: Comma separated list of example questions to show in the modal. Default is not set.
+        title: "[Deprecated] Modal example questions"
+        description: Deprecated - use config_json instead. Comma separated list of example questions to show in the modal. Default is not set.
       modal_image_hide:
         type: string
-        title: Modal image hide
-        description: Set to "true" to hide the image in the modal. Default is not set.
+        title: "[Deprecated] Modal image hide"
+        description: Deprecated - use config_json instead. Set to "true" to hide the image in the modal. Default is not set.
       modal_image_height:
         type: string
-        title: Modal image height
-        description: Default is set to `"32"`.
+        title: "[Deprecated] Modal image height"
+        description: Deprecated - use config_json instead. Default is set to `"32"`.
       modal_image_width:
         type: string
-        title: Modal image width
-        description: Default is set to `"32"`.
+        title: "[Deprecated] Modal image width"
+        description: Deprecated - use config_json instead. Default is set to `"32"`.
       modal_with_overlay:
         type: string
-        title: Modal with overlay
-        description: Set to "true" to show an overlay on the page when the modal is open. Default is not set.
+        title: "[Deprecated] Modal with overlay"
+        description: Deprecated - use config_json instead. Set to "true" to show an overlay on the page when the modal is open. Default is not set.
       modal_overlay_bg_color:
         type: string
-        title: Modal overlay background color
-        description: Choose the background color of the overlay. Default is not set.
+        title: "[Deprecated] Modal overlay background color"
+        description: Deprecated - use config_json instead. Choose the background color of the overlay. Default is not set.
       modal_overlay_opacity:
         type: string
-        title: Modal overlay opacity
-        description: Choose the opacity of the overlay. Default is not set.
+        title: "[Deprecated] Modal overlay opacity"
+        description: Deprecated - use config_json instead. Choose the opacity of the overlay. Default is not set.
       modal_inner_flex_direction:
         type: string
-        title: Modal inner flex direction
-        description: Choose the flex direction of the modal inner. Default is not set.
+        title: "[Deprecated] Modal inner flex direction"
+        description: Deprecated - use config_json instead. Choose the flex direction of the modal inner. Default is not set.
       modal_inner_justify_content:
         type: string
-        title: Modal inner justify content
-        description: Choose the justify content of the modal inner. Default is not set.
+        title: "[Deprecated] Modal inner justify content"
+        description: Deprecated - use config_json instead. Choose the justify content of the modal inner. Default is not set.
       modal_inner_max_width:
         type: string
-        title: Modal inner max width
-        description: Choose the max width of the modal inner. Default is not set.
+        title: "[Deprecated] Modal inner max width"
+        description: Deprecated - use config_json instead. Choose the max width of the modal inner. Default is not set.
       modal_inner_position_right:
         type: string
-        title: Modal inner position right
-        description: Choose the position of the modal inner on the right. Default is not set.
+        title: "[Deprecated] Modal inner position right"
+        description: Deprecated - use config_json instead. Choose the position of the modal inner on the right. Default is not set.
       modal_inner_position_left:
         type: string
-        title: Modal inner position left
-        description: Choose the position of the modal inner on the left. Default is not set.
+        title: "[Deprecated] Modal inner position left"
+        description: Deprecated - use config_json instead. Choose the position of the modal inner on the left. Default is not set.
       modal_inner_position_bottom:
         type: string
-        title: Modal inner position bottom
-        description: Choose the position of the modal inner on the bottom. Default is not set.
+        title: "[Deprecated] Modal inner position bottom"
+        description: Deprecated - use config_json instead. Choose the position of the modal inner on the bottom. Default is not set.
       modal_z_index:
         type: string
-        title: Modal z index
-        description: Choose the z index of the modal. Default is not set.
+        title: "[Deprecated] Modal z index"
+        description: Deprecated - use config_json instead. Choose the z index of the modal. Default is not set.
       modal_lock_scroll:
         type: string
-        title: Modal lock scroll
-        description: Set to "true" to lock the scroll when the modal is open. Default is not set.
+        title: "[Deprecated] Modal lock scroll"
+        description: Deprecated - use config_json instead. Set to "true" to lock the scroll when the modal is open. Default is not set.
       button_text:
         type: string
-        title: Button text
-        description: Set the text for the button. Default is "Ask AI".
+        title: "[Deprecated] Button text"
+        description: Deprecated - use config_json instead. Set the text for the button. Default is "Ask AI".
       switch_color:
         type: string
-        title: Switch color
-        description: The active color of the switch. Default is not set.
+        title: "[Deprecated] Switch color"
+        description: Deprecated - use config_json instead. The active color of the switch. Default is not set.
       switch_border:
         type: string
-        title: Switch border
-        description: The border of the switch. Default is not set.
+        title: "[Deprecated] Switch border"
+        description: Deprecated - use config_json instead. The border of the switch. Default is not set.
       switch_border_radius:
         type: string
-        title: Switch border radius
-        description: The border radius of the switch. Default is not set.
+        title: "[Deprecated] Switch border radius"
+        description: Deprecated - use config_json instead. The border radius of the switch. Default is not set.
       switch_bg_color:
         type: string
-        title: Switch background color
-        description: The background color of the switch. Default is not set.
+        title: "[Deprecated] Switch background color"
+        description: Deprecated - use config_json instead. The background color of the switch. Default is not set.
       switch_show_icons:
         type: string
-        title: Switch show icons
-        description: Enable the icons on the switch. Default is set to `"false"`.
+        title: "[Deprecated] Switch show icons"
+        description: "Deprecated - use config_json instead. Enable the icons on the switch. Default is set to `\"false\"`."
       font_family:
         type: string
-        title: Global font family
-        description: Default `"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif"`.
+        title: "[Deprecated] Global font family"
+        description: "Deprecated - use config_json instead. Default `\"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif\"`."
       search_mode_enabled:
         type: string
-        title: Serach mode enabled
-        description: Set to `"true"` to enable the search mode. Default is `"false"`.
+        title: "[Deprecated] Serach mode enabled"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to enable the search mode. Default is `\"false\"`."
       search_mode_default:
         type: string
-        title: Serach mode default
-        description: Set to `"true"` to set search as the default mode. Default is `"false"`.
+        title: "[Deprecated] Serach mode default"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to set search as the default mode. Default is `\"false\"`."
       search_display_num_results:
         type: string
-        title: Search display num results
-        description: The amount of results displayed in each "page". Default is `"5"`.
+        title: "[Deprecated] Search display num results"
+        description: "Deprecated - use config_json instead. The amount of results displayed in each \"page\". Default is `\"5\"`."
       search_include_source_names:
         type: string
-        title: Search include source names
-        description: Set of source names that should be included in the search. Default is not set.
+        title: "[Deprecated] Search include source names"
+        description: Deprecated - use config_json instead. Set of source names that should be included in the search. Default is not set.
       search_source_group_order:
         type: string
-        title: Search source group order
-        description: Order of source names by which sources should be grouped. Default is note set.
+        title: "[Deprecated] Search source group order"
+        description: Deprecated - use config_json instead. Order of source names by which sources should be grouped. Default is note set.
       search_keyboard_nav_enabled:
         type: string
-        title: Search keyboard nav enabled
-        description: Set to `"false"` to disable keyboard navigation. Default is `"true"`.
+        title: "[Deprecated] Search keyboard nav enabled"
+        description: "Deprecated - use config_json instead. Set to `\"false\"` to disable keyboard navigation. Default is `\"true\"`."
       search_result_hover_bg_color:
         type: string
-        title: Search result hover bg color
-        description: Default is `"#F1F1F1"`
+        title: "[Deprecated] Search result hover bg color"
+        description: Deprecated - use config_json instead. Default is `"#F1F1F1"`
       search_result_primary_text_color:
         type: string
-        title: Search result text color
-        description: Default is the project color.
+        title: "[Deprecated] Search result text color"
+        description: Deprecated - use config_json instead. Default is the project color.
       search_result_secondary_text_color:
         type: string
-        title: Search result sec. text color
-        description: Default is `"#868e96"`.
+        title: "[Deprecated] Search result sec. text color"
+        description: "Deprecated: use config_json instead. Default is \"#868e96\"."
       search_result_badge_bg_color:
         type: string
-        title: Search result badge bg color
-        description: Default is not set.
+        title: "[Deprecated] Search result badge bg color"
+        description: Deprecated - use config_json instead. Default is not set.
       search_result_badge_text_color:
         type: string
-        title: Search result badge text color
-        description: Default is not set.
+        title: "[Deprecated] Search result badge text color"
+        description: Deprecated - use config_json instead. Default is not set.
       search_show_more_button_text_color:
         type: string
-        title: Show more text color
-        description: Default is the project color.
+        title: "[Deprecated] Show more text color"
+        description: Deprecated - use config_json instead. Default is the project color.
       search_show_more_button_hover_bg_color:
         type: string
-        title: Show more hover bg color
-        description: Default is not set.
+        title: "[Deprecated] Show more hover bg color"
+        description: Deprecated - use config_json instead. Default is not set.
       user_analytics_cookie_enabled:
         type: string
-        title: Track user analytics
-        description: Enable / disable user analytics tracking using cookies. Default is "true".
+        title: "[Deprecated] Track user analytics"
+        description: Deprecated - use config_json instead. Enable / disable user analytics tracking using cookies. Default is "true".
       button_animation_enabled:
         type: string
-        title: Button animation enabled
-        description: Enables the wiggle animation of the button, used to draw user attention. Default is "true".
+        title: "[Deprecated] Button animation enabled"
+        description: Deprecated - use config_json instead. Enables the wiggle animation of the button, used to draw user attention. Default is "true".
       search_input_show_icon:
         type: string
-        title: Search input show icon
-        description: Set to `"false"` to hide the search icon. Default is `"true"`.
+        title: "[Deprecated] Search input show icon"
+        description: "Deprecated - use config_json instead. Set to `\"false\"` to hide the search icon. Default is `\"true\"`."
       search_result_primary_title_font_size:
         type: string
-        title: Search result primary title font size
-        description: Font size for the primary title in search results.
+        title: "[Deprecated] Search result primary title font size"
+        description: Deprecated - use config_json instead. Font size for the primary title in search results.
       search_result_secondary_title_font_size:
         type: string
-        title: Search result secondary title font size
-        description: Font size for the secondary title in search results.
+        title: "[Deprecated] Search result secondary title font size"
+        description: Deprecated - use config_json instead. Font size for the secondary title in search results.
       search_ask_ai_cta_text_color:
         type: string
-        title: Search Ask AI CTA text color
-        description: Text color for the "Ask AI" CTA button in search results. Default is the project color.
+        title: "[Deprecated] Search Ask AI CTA text color"
+        description: Deprecated - use config_json instead. Text color for the "Ask AI" CTA button in search results. Default is the project color.
       search_ask_ai_cta_hover_text_color:
         type: string
-        title: Search Ask AI CTA hover text color
-        description: Text color when hovering over the "Ask AI" CTA button. Default is the project color.
+        title: "[Deprecated] Search Ask AI CTA hover text color"
+        description: Deprecated - use config_json instead. Text color when hovering over the "Ask AI" CTA button. Default is the project color.
       search_ask_ai_cta_bg_color:
         type: string
-        title: Search Ask AI CTA background color
-        description: Background color for the "Ask AI" CTA button.
+        title: "[Deprecated] Search Ask AI CTA background color"
+        description: Deprecated - use config_json instead. Background color for the "Ask AI" CTA button.
       search_ask_ai_cta_hover_bg_color:
         type: string
-        title: Search Ask AI CTA hover background color
-        description: Background color when hovering over the "Ask AI" CTA button.
+        title: "[Deprecated] Search Ask AI CTA hover background color"
+        description: Deprecated - use config_json instead. Background color when hovering over the "Ask AI" CTA button.
       search_ask_ai_cta_border:
         type: string
-        title: Search Ask AI CTA border
-        description: Border style for the "Ask AI" CTA button.
+        title: "[Deprecated] Search Ask AI CTA border"
+        description: Deprecated - use config_json instead. Border style for the "Ask AI" CTA button.
       search_ask_ai_cta_text_font_size:
         type: string
-        title: Search Ask AI CTA text font size
-        description: Font size for the "Ask AI" CTA button text.
+        title: "[Deprecated] Search Ask AI CTA text font size"
+        description: Deprecated - use config_json instead. Font size for the "Ask AI" CTA button text.
       search_source_ids_include:
         type: string
-        title: Search source IDs include
-        description: Comma-separated list of source IDs to include in search results.
+        title: "[Deprecated] Search source IDs include"
+        description: Deprecated - use config_json instead. Comma-separated list of source IDs to include in search results.
       search_source_ids_order:
         type: string
-        title: Search source IDs order
-        description: Comma-separated list of source IDs defining the order in search results.
+        title: "[Deprecated] Search source IDs order"
+        description: Deprecated - use config_json instead. Comma-separated list of source IDs defining the order in search results.
       search_result_link_target:
         type: string
-        title: Search result link target
-        description: Link target for search results. Default is `"_blank"`.
+        title: "[Deprecated] Search result link target"
+        description: "Deprecated - use config_json instead. Link target for search results. Default is `\"_blank\"`."
       search_show_ask_ai_cta:
         type: string
-        title: Search show Ask AI CTA
-        description: Set to `"false"` to hide the "Ask AI" CTA in search. Default is `"true"`.
+        title: "[Deprecated] Search show Ask AI CTA"
+        description: "Deprecated - use config_json instead. Set to `\"false\"` to hide the \"Ask AI\" CTA in search. Default is `\"true\"`."
       language:
         type: string
-        title: Language
-        description: UI language code. Default is `"en"`.
+        title: "[Deprecated] Language"
+        description: "Deprecated - use config_json instead. UI language code. Default is `\"en\"`."
       scale_factor:
         type: string
-        title: Scale factor
-        description: Global scale factor for the widget. Default is `"1"`.
+        title: "[Deprecated] Scale factor"
+        description: "Deprecated - use config_json instead. Global scale factor for the widget. Default is `\"1\"`."
       font_size_xs:
         type: string
-        title: Font size XS
-        description: Extra small font size. Default is `"0.75rem"`.
+        title: "[Deprecated] Font size XS"
+        description: "Deprecated - use config_json instead. Extra small font size. Default is `\"0.75rem\"`."
       font_size_sm:
         type: string
-        title: Font size SM
-        description: Small font size. Default is `"0.875rem"`.
+        title: "[Deprecated] Font size SM"
+        description: "Deprecated - use config_json instead. Small font size. Default is `\"0.875rem\"`."
       font_size_md:
         type: string
-        title: Font size MD
-        description: Medium font size. Default is `"1rem"`.
+        title: "[Deprecated] Font size MD"
+        description: "Deprecated - use config_json instead. Medium font size. Default is `\"1rem\"`."
       font_size_lg:
         type: string
-        title: Font size LG
-        description: Large font size. Default is `"1.125rem"`.
+        title: "[Deprecated] Font size LG"
+        description: "Deprecated - use config_json instead. Large font size. Default is `\"1.125rem\"`."
       font_size_xl:
         type: string
-        title: Font size XL
-        description: Extra large font size. Default is `"1.25rem"`.
+        title: "[Deprecated] Font size XL"
+        description: "Deprecated - use config_json instead. Extra large font size. Default is `\"1.25rem\"`."
       hyperlink_color:
         type: string
-        title: Hyperlink color
-        description: Color for hyperlinks in the widget content.
+        title: "[Deprecated] Hyperlink color"
+        description: Deprecated - use config_json with "anchor-color" instead. Color for hyperlinks in the widget content.
       question_text_color:
         type: string
-        title: Question text color
-        description: Color for user question text.
+        title: "[Deprecated] Question text color"
+        description: Deprecated - use config_json with "text-color" instead. Color for user question text.
       answer_text_color:
         type: string
-        title: Answer text color
-        description: Color for AI answer text.
+        title: "[Deprecated] Answer text color"
+        description: Deprecated - use config_json with "text-color" instead. Color for AI answer text.
       button_hover_bg_color:
         type: string
-        title: Button hover background color
-        description: Background color when hovering over the floating button.
+        title: "[Deprecated] Button hover background color"
+        description: Deprecated - use config_json instead. Background color when hovering over the floating button.
       button_image:
         type: string
-        title: Button image
-        description: Image URL for the button. Default is the project logo.
+        title: "[Deprecated] Button image"
+        description: Deprecated - use config_json instead. Image URL for the button. Default is the project logo.
       button_image_height:
         type: string
-        title: Button image height
-        description: Height of the button image in pixels. Default is `"32"`.
+        title: "[Deprecated] Button image height"
+        description: Deprecated - use config_json instead. Height of the button image in pixels. Default is `"32"`.
       button_image_width:
         type: string
-        title: Button image width
-        description: Width of the button image in pixels. Default is `"32"`.
+        title: "[Deprecated] Button image width"
+        description: Deprecated - use config_json instead. Width of the button image in pixels. Default is `"32"`.
       button_z_index:
         type: string
-        title: Button z-index
-        description: Z-index for the button. Default is `"199"`.
+        title: "[Deprecated] Button z-index"
+        description: Deprecated - use config_json instead. Z-index for the button. Default is `"199"`.
       button_hover_animation_enabled:
         type: string
-        title: Button hover animation enabled
-        description: Enable hover animation for the button. Default is `"true"`.
+        title: "[Deprecated] Button hover animation enabled"
+        description: "Deprecated - use config_json instead. Enable hover animation for the button. Default is `\"true\"`."
       modal_image:
         type: string
-        title: Modal image
-        description: Main image to display in the modal header. Default is the project logo.
+        title: "[Deprecated] Modal image"
+        description: Deprecated - use config_json instead. Main image to display in the modal header. Default is the project logo.
       modal_close_button_hide:
         type: string
-        title: Modal close button hide
-        description: Set to `"true"` to hide the close button. Default is `"false"`.
+        title: "[Deprecated] Modal close button hide"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to hide the close button. Default is `\"false\"`."
       modal_disclaimer_bg_color:
         type: string
-        title: Modal disclaimer background color
-        description: Background color for the disclaimer section. Default is `"#F8F9FA"`.
+        title: "[Deprecated] Modal disclaimer background color"
+        description: "Deprecated: use config_json instead. Background color for the disclaimer section. Default is \"#F8F9FA\"."
       modal_disclaimer_text_color:
         type: string
-        title: Modal disclaimer text color
-        description: Text color for the disclaimer. Default is `"gray"`.
+        title: "[Deprecated] Modal disclaimer text color"
+        description: "Deprecated: use config_json instead. Text color for the disclaimer. Default is \"gray\"."
       modal_disclaimer_font_size:
         type: string
-        title: Modal disclaimer font size
-        description: Font size for the disclaimer text.
+        title: "[Deprecated] Modal disclaimer font size"
+        description: Deprecated - use config_json instead. Font size for the disclaimer text.
       modal_full_screen:
         type: string
-        title: Modal full screen
-        description: Set to `"true"` to display modal in full screen mode. Default is `"false"`.
+        title: "[Deprecated] Modal full screen"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to display modal in full screen mode. Default is `\"false\"`."
       modal_full_screen_on_mobile:
         type: string
-        title: Modal full screen on mobile
-        description: Set to `"false"` to disable full screen on mobile. Default is `"true"`.
+        title: "[Deprecated] Modal full screen on mobile"
+        description: "Deprecated - use config_json instead. Set to `\"false\"` to disable full screen on mobile. Default is `\"true\"`."
       modal_header_logo_hide_on_mobile:
         type: string
-        title: Modal header logo hide on mobile
-        description: Set to `"true"` to hide the logo on mobile. Default is `"false"`.
+        title: "[Deprecated] Modal header logo hide on mobile"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to hide the logo on mobile. Default is `\"false\"`."
       modal_example_questions_title:
         type: string
-        title: Modal example questions title
-        description: Title for the example questions section. Default is `"EXAMPLE QUESTIONS"`.
+        title: "[Deprecated] Modal example questions title"
+        description: "Deprecated - use config_json instead. Title for the example questions section. Default is `\"EXAMPLE QUESTIONS\"`."
       modal_example_questions_col_span:
         type: string
-        title: Modal example questions column span
-        description: Column span for example questions layout. Default is `"6"`.
+        title: "[Deprecated] Modal example questions column span"
+        description: "Deprecated - use config_json instead. Column span for example questions layout. Default is `\"6\"`."
       modal_footer:
         type: string
-        title: Modal footer
-        description: Custom footer content for the modal.
+        title: "[Deprecated] Modal footer"
+        description: Deprecated - use config_json instead. Custom footer content for the modal.
       modal_override_open_class_search:
         type: string
-        title: Modal override open class (search mode)
-        description: CSS class name to trigger modal opening in search mode.
+        title: "[Deprecated] Modal override open class (search mode)"
+        description: Deprecated - use config_json instead. CSS class name to trigger modal opening in search mode.
       modal_override_open_class_ask_ai:
         type: string
-        title: Modal override open class (Ask AI mode)
-        description: CSS class name to trigger modal opening in Ask AI mode.
+        title: "[Deprecated] Modal override open class (Ask AI mode)"
+        description: Deprecated - use config_json instead. CSS class name to trigger modal opening in Ask AI mode.
       modal_override_open_id:
         type: string
-        title: Modal override open ID
-        description: Element ID to trigger modal opening.
+        title: "[Deprecated] Modal override open ID"
+        description: Deprecated - use config_json instead. Element ID to trigger modal opening.
       modal_override_open_id_search:
         type: string
-        title: Modal override open ID (search mode)
-        description: Element ID to trigger modal opening in search mode.
+        title: "[Deprecated] Modal override open ID (search mode)"
+        description: Deprecated - use config_json instead. Element ID to trigger modal opening in search mode.
       modal_override_open_id_ask_ai:
         type: string
-        title: Modal override open ID (Ask AI mode)
-        description: Element ID to trigger modal opening in Ask AI mode.
+        title: "[Deprecated] Modal override open ID (Ask AI mode)"
+        description: Deprecated - use config_json instead. Element ID to trigger modal opening in Ask AI mode.
       modal_override_open_selector:
         type: string
-        title: Modal override open selector
-        description: CSS selector to trigger modal opening.
+        title: "[Deprecated] Modal override open selector"
+        description: Deprecated - use config_json instead. CSS selector to trigger modal opening.
       modal_override_open_selector_search:
         type: string
-        title: Modal override open selector (search mode)
-        description: CSS selector to trigger modal opening in search mode.
+        title: "[Deprecated] Modal override open selector (search mode)"
+        description: Deprecated - use config_json instead. CSS selector to trigger modal opening in search mode.
       modal_override_open_selector_ask_ai:
         type: string
-        title: Modal override open selector (Ask AI mode)
-        description: CSS selector to trigger modal opening in Ask AI mode.
+        title: "[Deprecated] Modal override open selector (Ask AI mode)"
+        description: Deprecated - use config_json instead. CSS selector to trigger modal opening in Ask AI mode.
       modal_command_k_search_mode_default:
         type: string
-        title: Modal Cmd+K search mode default
-        description: Set to `"true"` to default to search mode when opening with Cmd+K. Default is `"false"`.
+        title: "[Deprecated] Modal Cmd+K search mode default"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to default to search mode when opening with Cmd+K. Default is `\"false\"`."
       modal_image_ask_ai:
         type: string
-        title: Modal image (Ask AI mode)
-        description: Image to display when in Ask AI mode. Default is the modal image.
+        title: "[Deprecated] Modal image (Ask AI mode)"
+        description: Deprecated - use config_json instead. Image to display when in Ask AI mode. Default is the modal image.
       modal_image_search:
         type: string
-        title: Modal image (search mode)
-        description: Image to display when in search mode. Default is the modal image.
+        title: "[Deprecated] Modal image (search mode)"
+        description: Deprecated - use config_json instead. Image to display when in search mode. Default is the modal image.
       modal_title_search:
         type: string
-        title: Modal title (search mode)
-        description: Modal title when in search mode. Default is the modal title.
+        title: "[Deprecated] Modal title (search mode)"
+        description: Deprecated - use config_json instead. Modal title when in search mode. Default is the modal title.
       modal_title_ask_ai:
         type: string
-        title: Modal title (Ask AI mode)
-        description: Modal title when in Ask AI mode. Default is the modal title.
+        title: "[Deprecated] Modal title (Ask AI mode)"
+        description: Deprecated - use config_json instead. Modal title when in Ask AI mode. Default is the modal title.
       query_input_font_size:
         type: string
-        title: Query input font size
-        description: Font size for the query input field.
+        title: "[Deprecated] Query input font size"
+        description: Deprecated - use config_json instead. Font size for the query input field.
       query_input_text_color:
         type: string
-        title: Query input text color
-        description: Text color for the query input. Default is `"#000"`.
+        title: "[Deprecated] Query input text color"
+        description: "Deprecated: use config_json instead. Text color for the query input. Default is \"#000\"."
       query_input_placeholder_text_color:
         type: string
-        title: Query input placeholder text color
-        description: Placeholder text color for the query input. Default is `"#adb5bd"`.
+        title: "[Deprecated] Query input placeholder text color"
+        description: "Deprecated: use config_json instead. Placeholder text color for the query input. Default is \"#adb5bd\"."
       query_input_border_color:
         type: string
-        title: Query input border color
-        description: Border color for the query input field.
+        title: "[Deprecated] Query input border color"
+        description: Deprecated - use config_json instead. Border color for the query input field.
       query_input_focus_border_color:
         type: string
-        title: Query input focus border color
-        description: Border color when the query input is focused.
+        title: "[Deprecated] Query input focus border color"
+        description: Deprecated - use config_json instead. Border color when the query input is focused.
       submit_query_button_bg_color:
         type: string
-        title: Submit query button background color
-        description: Background color for the submit button.
+        title: "[Deprecated] Submit query button background color"
+        description: Deprecated - use config_json instead. Background color for the submit button.
       conversation_buttons_icons_only:
         type: string
-        title: Conversation buttons icons only
-        description: Set to `"true"` to show only icons on conversation buttons. Default is `"false"`.
+        title: "[Deprecated] Conversation buttons icons only"
+        description: Deprecated - use config_json instead. Set to `"true"` to show only icons on conversation buttons. Default is `"false"`.
       answer_copy_button_height:
         type: string
-        title: Answer copy button height
-        description: Height of the copy button.
+        title: "[Deprecated] Answer copy button height"
+        description: Deprecated - use config_json instead. Height of the copy button.
       answer_copy_button_width:
         type: string
-        title: Answer copy button width
-        description: Width of the copy button.
+        title: "[Deprecated] Answer copy button width"
+        description: Deprecated - use config_json instead. Width of the copy button.
       answer_copy_button_padding_x:
         type: string
-        title: Answer copy button padding X
-        description: Horizontal padding for the copy button.
+        title: "[Deprecated] Answer copy button padding X"
+        description: Deprecated - use config_json instead. Horizontal padding for the copy button.
       answer_copy_button_padding_y:
         type: string
-        title: Answer copy button padding Y
-        description: Vertical padding for the copy button.
+        title: "[Deprecated] Answer copy button padding Y"
+        description: Deprecated - use config_json instead. Vertical padding for the copy button.
       answer_copy_button_border:
         type: string
-        title: Answer copy button border
-        description: Border style for the copy button.
+        title: "[Deprecated] Answer copy button border"
+        description: Deprecated - use config_json instead. Border style for the copy button.
       answer_copy_button_border_radius:
         type: string
-        title: Answer copy button border radius
-        description: Border radius for the copy button.
+        title: "[Deprecated] Answer copy button border radius"
+        description: Deprecated - use config_json instead. Border radius for the copy button.
       answer_copy_button_bg_color:
         type: string
-        title: Answer copy button background color
-        description: Background color for the copy button.
+        title: "[Deprecated] Answer copy button background color"
+        description: Deprecated - use config_json instead. Background color for the copy button.
       answer_copy_button_hover_bg_color:
         type: string
-        title: Answer copy button hover background color
-        description: Background color when hovering over the copy button.
+        title: "[Deprecated] Answer copy button hover background color"
+        description: Deprecated - use config_json instead. Background color when hovering over the copy button.
       answer_copy_button_text_color:
         type: string
-        title: Answer copy button text color
-        description: Text color for the copy button.
+        title: "[Deprecated] Answer copy button text color"
+        description: Deprecated - use config_json instead. Text color for the copy button.
       answer_copy_button_font_size:
         type: string
-        title: Answer copy button font size
-        description: Font size for the copy button.
+        title: "[Deprecated] Answer copy button font size"
+        description: Deprecated - use config_json instead. Font size for the copy button.
       answer_copy_button_icon_size:
         type: string
-        title: Answer copy button icon size
-        description: Icon size for the copy button.
+        title: "[Deprecated] Answer copy button icon size"
+        description: Deprecated - use config_json instead. Icon size for the copy button.
       answer_copy_button_box_shadow:
         type: string
-        title: Answer copy button box shadow
-        description: Box shadow for the copy button.
+        title: "[Deprecated] Answer copy button box shadow"
+        description: Deprecated - use config_json instead. Box shadow for the copy button.
       thread_clear_button_height:
         type: string
-        title: Thread clear button height
-        description: Height of the thread clear button.
+        title: "[Deprecated] Thread clear button height"
+        description: Deprecated - use config_json instead. Height of the thread clear button.
       thread_clear_button_width:
         type: string
-        title: Thread clear button width
-        description: Width of the thread clear button.
+        title: "[Deprecated] Thread clear button width"
+        description: Deprecated - use config_json instead. Width of the thread clear button.
       thread_clear_button_padding_x:
         type: string
-        title: Thread clear button padding X
-        description: Horizontal padding for the thread clear button.
+        title: "[Deprecated] Thread clear button padding X"
+        description: Deprecated - use config_json instead. Horizontal padding for the thread clear button.
       thread_clear_button_padding_y:
         type: string
-        title: Thread clear button padding Y
-        description: Vertical padding for the thread clear button.
+        title: "[Deprecated] Thread clear button padding Y"
+        description: Deprecated - use config_json instead. Vertical padding for the thread clear button.
       thread_clear_button_border:
         type: string
-        title: Thread clear button border
-        description: Border style for the thread clear button.
+        title: "[Deprecated] Thread clear button border"
+        description: Deprecated - use config_json instead. Border style for the thread clear button.
       thread_clear_button_border_radius:
         type: string
-        title: Thread clear button border radius
-        description: Border radius for the thread clear button.
+        title: "[Deprecated] Thread clear button border radius"
+        description: Deprecated - use config_json instead. Border radius for the thread clear button.
       thread_clear_button_bg_color:
         type: string
-        title: Thread clear button background color
-        description: Background color for the thread clear button.
+        title: "[Deprecated] Thread clear button background color"
+        description: Deprecated - use config_json instead. Background color for the thread clear button.
       thread_clear_button_hover_bg_color:
         type: string
-        title: Thread clear button hover background color
-        description: Background color when hovering over the thread clear button.
+        title: "[Deprecated] Thread clear button hover background color"
+        description: Deprecated - use config_json instead. Background color when hovering over the thread clear button.
       thread_clear_button_text_color:
         type: string
-        title: Thread clear button text color
-        description: Text color for the thread clear button.
+        title: "[Deprecated] Thread clear button text color"
+        description: Deprecated - use config_json instead. Text color for the thread clear button.
       thread_clear_button_font_size:
         type: string
-        title: Thread clear button font size
-        description: Font size for the thread clear button.
+        title: "[Deprecated] Thread clear button font size"
+        description: Deprecated - use config_json instead. Font size for the thread clear button.
       thread_clear_button_icon_size:
         type: string
-        title: Thread clear button icon size
-        description: Icon size for the thread clear button.
+        title: "[Deprecated] Thread clear button icon size"
+        description: Deprecated - use config_json instead. Icon size for the thread clear button.
       thread_clear_button_box_shadow:
         type: string
-        title: Thread clear button box shadow
-        description: Box shadow for the thread clear button.
+        title: "[Deprecated] Thread clear button box shadow"
+        description: Deprecated - use config_json instead. Box shadow for the thread clear button.
       answer_feedback_button_height:
         type: string
-        title: Answer feedback button height
-        description: Height of the feedback button.
+        title: "[Deprecated] Answer feedback button height"
+        description: Deprecated - use config_json instead. Height of the feedback button.
       answer_feedback_button_width:
         type: string
-        title: Answer feedback button width
-        description: Width of the feedback button.
+        title: "[Deprecated] Answer feedback button width"
+        description: Deprecated - use config_json instead. Width of the feedback button.
       answer_feedback_button_padding_x:
         type: string
-        title: Answer feedback button padding X
-        description: Horizontal padding for the feedback button.
+        title: "[Deprecated] Answer feedback button padding X"
+        description: Deprecated - use config_json instead. Horizontal padding for the feedback button.
       answer_feedback_button_padding_y:
         type: string
-        title: Answer feedback button padding Y
-        description: Vertical padding for the feedback button.
+        title: "[Deprecated] Answer feedback button padding Y"
+        description: Deprecated - use config_json instead. Vertical padding for the feedback button.
       answer_feedback_button_border:
         type: string
-        title: Answer feedback button border
-        description: Border style for the feedback button.
+        title: "[Deprecated] Answer feedback button border"
+        description: Deprecated - use config_json instead. Border style for the feedback button.
       answer_feedback_button_active_border:
         type: string
-        title: Answer feedback button active border
-        description: Border style when the feedback button is active.
+        title: "[Deprecated] Answer feedback button active border"
+        description: Deprecated - use config_json instead. Border style when the feedback button is active.
       answer_feedback_button_border_radius:
         type: string
-        title: Answer feedback button border radius
-        description: Border radius for the feedback button.
+        title: "[Deprecated] Answer feedback button border radius"
+        description: Deprecated - use config_json instead. Border radius for the feedback button.
       answer_feedback_button_bg_color:
         type: string
-        title: Answer feedback button background color
-        description: Background color for the feedback button.
+        title: "[Deprecated] Answer feedback button background color"
+        description: Deprecated - use config_json instead. Background color for the feedback button.
       answer_feedback_button_active_bg_color:
         type: string
-        title: Answer feedback button active background color
-        description: Background color when the feedback button is active.
+        title: "[Deprecated] Answer feedback button active background color"
+        description: Deprecated - use config_json instead. Background color when the feedback button is active.
       answer_feedback_button_active_hover_bg_color:
         type: string
-        title: Answer feedback button active hover bg color
-        description: Background color when hovering over an active feedback button. Default is `"transparent"`.
+        title: "[Deprecated] Answer feedback button active hover bg color"
+        description: Deprecated - use config_json instead. Background color when hovering over an active feedback button. Default is `"transparent"`.
       answer_feedback_button_hover_bg_color:
         type: string
-        title: Answer feedback button hover background color
-        description: Background color when hovering over the feedback button.
+        title: "[Deprecated] Answer feedback button hover background color"
+        description: Deprecated - use config_json instead. Background color when hovering over the feedback button.
       answer_feedback_button_text_color:
         type: string
-        title: Answer feedback button text color
-        description: Text color for the feedback button.
+        title: "[Deprecated] Answer feedback button text color"
+        description: Deprecated - use config_json instead. Text color for the feedback button.
       answer_feedback_button_active_text_color:
         type: string
-        title: Answer feedback button active text color
-        description: Text color when the feedback button is active.
+        title: "[Deprecated] Answer feedback button active text color"
+        description: Deprecated - use config_json instead. Text color when the feedback button is active.
       answer_feedback_button_font_size:
         type: string
-        title: Answer feedback button font size
-        description: Font size for the feedback button.
+        title: "[Deprecated] Answer feedback button font size"
+        description: Deprecated - use config_json instead. Font size for the feedback button.
       answer_feedback_button_icon_size:
         type: string
-        title: Answer feedback button icon size
-        description: Icon size for the feedback button.
+        title: "[Deprecated] Answer feedback button icon size"
+        description: Deprecated - use config_json instead. Icon size for the feedback button.
       answer_feedback_button_box_shadow:
         type: string
-        title: Answer feedback button box shadow
-        description: Box shadow for the feedback button.
+        title: "[Deprecated] Answer feedback button box shadow"
+        description: Deprecated - use config_json instead. Box shadow for the feedback button.
       cta_button_height:
         type: string
-        title: CTA button height
-        description: Height of the CTA button.
+        title: "[Deprecated] CTA button height"
+        description: Deprecated - use config_json instead. Height of the CTA button.
       cta_button_width:
         type: string
-        title: CTA button width
-        description: Width of the CTA button.
+        title: "[Deprecated] CTA button width"
+        description: Deprecated - use config_json instead. Width of the CTA button.
       cta_button_padding_x:
         type: string
-        title: CTA button padding X
-        description: Horizontal padding for the CTA button.
+        title: "[Deprecated] CTA button padding X"
+        description: Deprecated - use config_json instead. Horizontal padding for the CTA button.
       cta_button_padding_y:
         type: string
-        title: CTA button padding Y
-        description: Vertical padding for the CTA button.
+        title: "[Deprecated] CTA button padding Y"
+        description: Deprecated - use config_json instead. Vertical padding for the CTA button.
       cta_button_border:
         type: string
-        title: CTA button border
-        description: Border style for the CTA button.
+        title: "[Deprecated] CTA button border"
+        description: Deprecated - use config_json instead. Border style for the CTA button.
       cta_button_border_radius:
         type: string
-        title: CTA button border radius
-        description: Border radius for the CTA button.
+        title: "[Deprecated] CTA button border radius"
+        description: Deprecated - use config_json instead. Border radius for the CTA button.
       cta_button_bg_color:
         type: string
-        title: CTA button background color
-        description: Background color for the CTA button.
+        title: "[Deprecated] CTA button background color"
+        description: Deprecated - use config_json instead. Background color for the CTA button.
       cta_button_hover_bg_color:
         type: string
-        title: CTA button hover background color
-        description: Background color when hovering over the CTA button.
+        title: "[Deprecated] CTA button hover background color"
+        description: Deprecated - use config_json instead. Background color when hovering over the CTA button.
       cta_button_text_color:
         type: string
-        title: CTA button text color
-        description: Text color for the CTA button.
+        title: "[Deprecated] CTA button text color"
+        description: Deprecated - use config_json instead. Text color for the CTA button.
       cta_button_font_size:
         type: string
-        title: CTA button font size
-        description: Font size for the CTA button.
+        title: "[Deprecated] CTA button font size"
+        description: Deprecated - use config_json instead. Font size for the CTA button.
       cta_button_icon_size:
         type: string
-        title: CTA button icon size
-        description: Icon size for the CTA button.
+        title: "[Deprecated] CTA button icon size"
+        description: Deprecated - use config_json instead. Icon size for the CTA button.
       cta_button_box_shadow:
         type: string
-        title: CTA button box shadow
-        description: Box shadow for the CTA button.
+        title: "[Deprecated] CTA button box shadow"
+        description: Deprecated - use config_json instead. Box shadow for the CTA button.
       example_question_button_height:
         type: string
-        title: Example question button height
-        description: Height of example question buttons.
+        title: "[Deprecated] Example question button height"
+        description: Deprecated - use config_json instead. Height of example question buttons.
       example_question_button_width:
         type: string
-        title: Example question button width
-        description: Width of example question buttons.
+        title: "[Deprecated] Example question button width"
+        description: Deprecated - use config_json instead. Width of example question buttons.
       example_question_button_padding_x:
         type: string
-        title: Example question button padding X
-        description: Horizontal padding for example question buttons.
+        title: "[Deprecated] Example question button padding X"
+        description: Deprecated - use config_json instead. Horizontal padding for example question buttons.
       example_question_button_padding_y:
         type: string
-        title: Example question button padding Y
-        description: Vertical padding for example question buttons.
+        title: "[Deprecated] Example question button padding Y"
+        description: Deprecated - use config_json instead. Vertical padding for example question buttons.
       example_question_button_border:
         type: string
-        title: Example question button border
-        description: Border style for example question buttons.
+        title: "[Deprecated] Example question button border"
+        description: Deprecated - use config_json instead. Border style for example question buttons.
       example_question_button_border_radius:
         type: string
-        title: Example question button border radius
-        description: Border radius for example question buttons.
+        title: "[Deprecated] Example question button border radius"
+        description: Deprecated - use config_json instead. Border radius for example question buttons.
       example_question_button_bg_color:
         type: string
-        title: Example question button background color
-        description: Background color for example question buttons.
+        title: "[Deprecated] Example question button background color"
+        description: Deprecated - use config_json instead. Background color for example question buttons.
       example_question_button_hover_bg_color:
         type: string
-        title: Example question button hover background color
-        description: Background color when hovering over example question buttons.
+        title: "[Deprecated] Example question button hover background color"
+        description: Deprecated - use config_json instead. Background color when hovering over example question buttons.
       example_question_button_text_color:
         type: string
-        title: Example question button text color
-        description: Text color for example question buttons.
+        title: "[Deprecated] Example question button text color"
+        description: Deprecated - use config_json instead. Text color for example question buttons.
       example_question_button_font_size:
         type: string
-        title: Example question button font size
-        description: Font size for example question buttons.
+        title: "[Deprecated] Example question button font size"
+        description: Deprecated - use config_json instead. Font size for example question buttons.
       example_question_button_box_shadow:
         type: string
-        title: Example question button box shadow
-        description: Box shadow for example question buttons.
+        title: "[Deprecated] Example question button box shadow"
+        description: Deprecated - use config_json instead. Box shadow for example question buttons.
       deep_thinking_button_bg_color:
         type: string
-        title: Deep thinking button background color
-        description: Background color for the deep thinking button. Default is `"transparent"`.
+        title: "[Deprecated] Deep thinking button background color"
+        description: Deprecated - use config_json instead. Background color for the deep thinking button. Default is `"transparent"`.
       deep_thinking_button_active_bg_color:
         type: string
-        title: Deep thinking button active background color
-        description: Background color when the deep thinking button is active.
+        title: "[Deprecated] Deep thinking button active background color"
+        description: Deprecated - use config_json instead. Background color when the deep thinking button is active.
       deep_thinking_button_hover_bg_color:
         type: string
-        title: Deep thinking button hover background color
-        description: Background color when hovering over the deep thinking button.
+        title: "[Deprecated] Deep thinking button hover background color"
+        description: Deprecated - use config_json instead. Background color when hovering over the deep thinking button.
       deep_thinking_button_active_hover_bg_color:
         type: string
-        title: Deep thinking button active hover background color
-        description: Background color when hovering over an active deep thinking button. Default is `"#f8f9fa"`.
+        title: "[Deprecated] Deep thinking button active hover background color"
+        description: Deprecated - use config_json instead. Background color when hovering over an active deep thinking button. Default is `"#f8f9fa"`.
       deep_thinking_button_active_hover_text_color:
         type: string
-        title: Deep thinking button active hover text color
-        description: Text color when hovering over an active deep thinking button.
+        title: "[Deprecated] Deep thinking button active hover text color"
+        description: Deprecated - use config_json instead. Text color when hovering over an active deep thinking button.
       deep_thinking_button_text_color:
         type: string
-        title: Deep thinking button text color
-        description: Text color for the deep thinking button.
+        title: "[Deprecated] Deep thinking button text color"
+        description: Deprecated - use config_json instead. Text color for the deep thinking button.
       deep_thinking_button_active_text_color:
         type: string
-        title: Deep thinking button active text color
-        description: Text color when the deep thinking button is active.
+        title: "[Deprecated] Deep thinking button active text color"
+        description: Deprecated - use config_json instead. Text color when the deep thinking button is active.
       deep_thinking_button_font_size:
         type: string
-        title: Deep thinking button font size
-        description: Font size for the deep thinking button.
+        title: "[Deprecated] Deep thinking button font size"
+        description: Deprecated - use config_json instead. Font size for the deep thinking button.
       deep_thinking_button_icon_size:
         type: string
-        title: Deep thinking button icon size
-        description: Icon size for the deep thinking button.
+        title: "[Deprecated] Deep thinking button icon size"
+        description: Deprecated - use config_json instead. Icon size for the deep thinking button.
       source_link_primary_heading_text_color:
         type: string
-        title: Source link primary heading text color
-        description: Text color for the primary heading in source links.
+        title: "[Deprecated] Source link primary heading text color"
+        description: Deprecated - use config_json instead. Text color for the primary heading in source links.
       source_link_secondary_heading_text_color:
         type: string
-        title: Source link secondary heading text color
-        description: Text color for the secondary heading in source links.
+        title: "[Deprecated] Source link secondary heading text color"
+        description: Deprecated - use config_json instead. Text color for the secondary heading in source links.
       source_link_border:
         type: string
-        title: Source link border
-        description: Border style for source links.
+        title: "[Deprecated] Source link border"
+        description: Deprecated - use config_json instead. Border style for source links.
       source_link_bg_color:
         type: string
-        title: Source link background color
-        description: Background color for source links.
+        title: "[Deprecated] Source link background color"
+        description: Deprecated - use config_json instead. Background color for source links.
       source_link_hover_bg_color:
         type: string
-        title: Source link hover background color
-        description: Background color when hovering over source links.
+        title: "[Deprecated] Source link hover background color"
+        description: Deprecated - use config_json instead. Background color when hovering over source links.
       switch_label_padding_x:
         type: string
-        title: Switch label padding X
-        description: Horizontal padding for switch labels.
+        title: "[Deprecated] Switch label padding X"
+        description: Deprecated - use config_json instead. Horizontal padding for switch labels.
       switch_label_padding_y:
         type: string
-        title: Switch label padding Y
-        description: Vertical padding for switch labels.
+        title: "[Deprecated] Switch label padding Y"
+        description: Deprecated - use config_json instead. Vertical padding for switch labels.
       switch_label_font_size:
         type: string
-        title: Switch label font size
-        description: Font size for switch labels.
+        title: "[Deprecated] Switch label font size"
+        description: Deprecated - use config_json instead. Font size for switch labels.
       switch_label_font_weight:
         type: string
-        title: Switch label font weight
-        description: Font weight for switch labels.
+        title: "[Deprecated] Switch label font weight"
+        description: Deprecated - use config_json instead. Font weight for switch labels.
       source_group_ids_include:
         type: string
-        title: Source group IDs include
-        description: Comma-separated list of source group IDs to include.
+        title: "[Deprecated] Source group IDs include"
+        description: Deprecated - use config_json instead. Comma-separated list of source group IDs to include.
       consent_required:
         type: string
-        title: Consent required
-        description: Set to `"true"` to require user consent before tracking. Default is `"false"`.
+        title: "[Deprecated] Consent required"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to require user consent before tracking. Default is `\"false\"`."
       consent_screen_title:
         type: string
-        title: Consent screen title
-        description: Title for the consent screen.
+        title: "[Deprecated] Consent screen title"
+        description: Deprecated - use config_json instead. Title for the consent screen.
       consent_screen_disclaimer:
         type: string
-        title: Consent screen disclaimer
-        description: Disclaimer text for the consent screen.
+        title: "[Deprecated] Consent screen disclaimer"
+        description: Deprecated - use config_json instead. Disclaimer text for the consent screen.
       consent_screen_accept_button_text:
         type: string
-        title: Consent screen accept button text
-        description: Text for the accept button on the consent screen.
+        title: "[Deprecated] Consent screen accept button text"
+        description: Deprecated - use config_json instead. Text for the accept button on the consent screen.
       consent_screen_reject_button_text:
         type: string
-        title: Consent screen reject button text
-        description: Text for the reject button on the consent screen.
+        title: "[Deprecated] Consent screen reject button text"
+        description: Deprecated - use config_json instead. Text for the reject button on the consent screen.
       answer_cta_button_enabled:
         type: string
-        title: Answer CTA button enabled
-        description: Set to `"true"` to enable the CTA button in answers. Default is `"false"`.
+        title: "[Deprecated] Answer CTA button enabled"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to enable the CTA button in answers. Default is `\"false\"`."
       answer_cta_button_text:
         type: string
-        title: Answer CTA button text
-        description: Text for the CTA button. Default is `"Talk to an Expert"`.
+        title: "[Deprecated] Answer CTA button text"
+        description: "Deprecated - use config_json instead. Text for the CTA button. Default is `\"Talk to an Expert\"`."
       answer_cta_button_link:
         type: string
-        title: Answer CTA button link
-        description: URL for the CTA button. Default is `"#"`.
+        title: "[Deprecated] Answer CTA button link"
+        description: "Deprecated - use config_json instead. URL for the CTA button. Default is `\"#\"`."
       footer_tos_privacy_links:
         type: string
-        title: Footer ToS & Privacy links
-        description: Links for Terms of Service and Privacy Policy in the footer.
+        title: "[Deprecated] Footer ToS & Privacy links"
+        description: Deprecated - use config_json instead. Links for Terms of Service and Privacy Policy in the footer.
       kapa_branding_hide:
         type: string
-        title: Kapa branding hide
-        description: Set to `"true"` to hide Kapa branding. Default is `"false"`.
+        title: "[Deprecated] Kapa branding hide"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to hide Kapa branding. Default is `\"false\"`."
       kapa_branding_text:
         type: string
-        title: Kapa branding text
-        description: Custom text for Kapa branding.
+        title: "[Deprecated] Kapa branding text"
+        description: Deprecated - use config_json instead. Custom text for Kapa branding.
       uncertain_answer_callout:
         type: string
-        title: Uncertain answer callout
-        description: Custom callout text for uncertain answers.
+        title: "[Deprecated] Uncertain answer callout"
+        description: Deprecated - use config_json instead. Custom callout text for uncertain answers.
       user_satisfaction_feedback_enabled:
         type: string
-        title: User satisfaction feedback enabled
-        description: Set to `"false"` to disable user feedback. Default is `"true"`.
+        title: "[Deprecated] User satisfaction feedback enabled"
+        description: "Deprecated - use config_json instead. Set to `\"false\"` to disable user feedback. Default is `\"true\"`."
       bot_protection_mechanism:
         type: string
-        title: Bot protection mechanism
-        description: Bot protection mechanism to use (`"recaptcha"` or `"hcaptcha"`). Default is `"recaptcha"`.
+        title: "[Deprecated] Bot protection mechanism"
+        description: "Deprecated - use config_json instead. Bot protection mechanism to use (`\"recaptcha\"` or `\"hcaptcha\"`). Default is `\"recaptcha\"`."
       user_analytics_fingerprint_enabled:
         type: string
-        title: User analytics fingerprint enabled
-        description: Set to `"true"` to enable fingerprint-based user tracking. Default is `"false"`.
+        title: "[Deprecated] User analytics fingerprint enabled"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to enable fingerprint-based user tracking. Default is `\"false\"`."
       mcp_enabled:
         type: string
-        title: MCP enabled
-        description: Set to `"true"` to enable Model Context Protocol integration. Default is `"false"`.
+        title: "[Deprecated] MCP enabled"
+        description: "Deprecated - use config_json instead. Set to `\"true\"` to enable Model Context Protocol integration. Default is `\"false\"`."
       mcp_server_url:
         type: string
-        title: MCP server URL
-        description: URL for the MCP server.
+        title: "[Deprecated] MCP server URL"
+        description: Deprecated - use config_json instead. URL for the MCP server.
       mcp_button_text:
         type: string
-        title: MCP button text
-        description: Text for the MCP button. Default is `"Use MCP"`.
+        title: "[Deprecated] MCP button text"
+        description: "Deprecated - use config_json instead. Text for the MCP button. Default is `\"Use MCP\"`."
     required:
       - native_ai_experience
       - website_id
